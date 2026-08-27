@@ -1,0 +1,5 @@
+{
+  "version": "10.4",
+  "installer": "https://github.com/hanyna/morid/releases/download/v10.4/morid_setup_10.4.exe",
+  "notes": "שיפורי יציבות ותיקוני עומק"
+}
