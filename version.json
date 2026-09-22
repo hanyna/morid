@@ -1,5 +1,6 @@
 {
-  "version": "10.4",
-  "installer": "https://github.com/hanyna/morid/releases/download/v10.4/morid_setup_10.4.exe",
-  "notes": "שיפורי יציבות ותיקוני עומק"
+  "version": "10.5",
+  "filename": "מתקין_מוריד_השירים.exe",
+  "installer": "https://github.com/hanyna/morid/releases/download/v10.5/%D7%9E%D7%AA%D7%A7%D7%99%D7%9F_%D7%9E%D7%95%D7%A8%D7%99%D7%93_%D7%94%D7%A9%D7%99%D7%A8%D7%99%D7%9D.exe",
+  "notes": "תיקון איקונים, חסימת קיצורי מקלדת של דפדפן, תפריטים ניתנים לגלילה"
 }
