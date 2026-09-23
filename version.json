@@ -1,6 +1,9 @@
 {
-  "version": "10.5",
-  "filename": "מתקין_מוריד_השירים.exe",
-  "installer": "https://github.com/hanyna/morid/releases/download/v10.5/%D7%9E%D7%AA%D7%A7%D7%99%D7%9F_%D7%9E%D7%95%D7%A8%D7%99%D7%93_%D7%94%D7%A9%D7%99%D7%A8%D7%99%D7%9D.exe",
-  "notes": "תיקון איקונים, חסימת קיצורי מקלדת של דפדפן, תפריטים ניתנים לגלילה"
+  "version": "10.6",
+  "filename": "morid_update_10.6.exe",
+  "installer": "https://github.com/hanyna/morid/releases/download/v10.6/morid_update_10.6.exe",
+  "update": "https://github.com/hanyna/morid/releases/download/v10.6/morid_update_10.6.exe",
+  "setup": "https://github.com/hanyna/morid/releases/download/v10.6/morid_setup_10.6.exe",
+  "page": "https://github.com/hanyna/morid/releases/tag/v10.6",
+  "notes": "עדכון מתוך התוכנה תוקן (בדיקה בכל פתיחה, עדכון בלחיצה אחת) + דיווח שימוש אנונימי ללוח הבקרה"
 }
