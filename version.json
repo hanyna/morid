@@ -1,8 +1,8 @@
 {
-  "version": "10.6",
-  "filename": "morid_update_10.6.exe",
-  "installer": "https://github.com/hanyna/morid/releases/download/v10.6/morid_update_10.6.exe",
-  "update": "https://github.com/hanyna/morid/releases/download/v10.6/morid_update_10.6.exe",
-  "page": "https://github.com/hanyna/morid/releases/tag/v10.6",
+  "version": "10.7",
+  "filename": "morid_update_10.7.exe",
+  "installer": "https://github.com/hanyna/morid/releases/download/v10.7/morid_update_10.7.exe",
+  "update": "https://github.com/hanyna/morid/releases/download/v10.7/morid_update_10.7.exe",
+  "page": "https://github.com/hanyna/morid/releases/tag/v10.7",
   "notes": ""
 }
