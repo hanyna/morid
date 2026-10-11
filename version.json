@@ -1,8 +1,8 @@
 {
-  "version": "10.9.1",
-  "filename": "morid_update_10.9.1.exe",
-  "installer": "https://hanyna.github.io/morid/morid_update_10.9.1_web.exe",
-  "update": "https://hanyna.github.io/morid/morid_update_10.9.1_web.exe",
+  "version": "10.9",
+  "filename": "morid_update_10.9.exe",
+  "installer": "https://hanyna.github.io/morid/morid_update_10.9_web.exe",
+  "update": "https://hanyna.github.io/morid/morid_update_10.9_web.exe",
   "page": "https://github.com/hanyna/morid/releases",
   "notes": "פלייליסטים עם בחירה מדויקת של שירים (גם בנטפרי), מאיץ הורדות מובנה, חיתוך שקט בתחילת שיר, מאות ערוצים חדשים בחיפוש, הודעות ברורות כשנטפרי או רימון חוסמים, ותיקוני יציבות",
   "changes": [
