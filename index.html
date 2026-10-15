@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מוריד השירים – תוכנה כשרה להורדת שירים מיוטיוב למחשב | חינם</title>
+<meta name="description" content="תוכנה חינמית בעברית להורדת שירים וסרטונים מיוטיוב למחשב, עם מגן תוכן מובנה, חיפוש בערוצי מוזיקה יהודית מאושרים, הורדת פלייליסטים, MP3 ו-MP4. עובדת גם ברשתות מסוננות כמו נטפרי ורימון.">
+<meta name="keywords" content="תוכנה להורדת שירים, הורדת שירים מיוטיוב, מוריד שירים, תוכנה כשרה להורדת שירים, הורדת שירים חסידיים, הורדת מוזיקה יהודית, הורדת שירים בנטפרי, המרה ל-MP3">
+<link rel="canonical" href="https://hanyna.github.io/morid/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0A1220">
+<!-- אימות Google Search Console: הדביקו כאן את התגית שגוגל נותן, במקום השורה הזו -->
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="מוריד השירים">
+<meta property="og:title" content="מוריד השירים – תוכנה כשרה להורדת שירים מיוטיוב">
+<meta property="og:description" content="מורידים שירים מיוטיוב למחשב בלחיצה, עם מגן תוכן מובנה. חינם, בעברית, עובד גם בנטפרי.">
+<meta property="og:url" content="https://hanyna.github.io/morid/">
+<meta property="og:image" content="https://hanyna.github.io/morid/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/heebo-hebrew-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/frank-ruhl-libre-hebrew-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "מוריד השירים",
+  "alternateName": ["Morid Hashirim", "מוריד שירים"],
+  "description": "תוכנה חינמית בעברית להורדת שירים וסרטונים מיוטיוב למחשב, עם מגן תוכן מובנה וחיפוש בערוצי מוזיקה יהודית מאושרים.",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "inLanguage": "he",
+  "softwareVersion": "10.9.1",
+  "url": "https://hanyna.github.io/morid/",
+  "downloadUrl": "https://github.com/hanyna/morid/releases/latest",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ILS" },
+  "author": { "@type": "Person", "name": "חנינה" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "איך מורידים שיר מיוטיוב למחשב?",
+      "acceptedAnswer": { "@type": "Answer", "text": "מתקינים את מוריד השירים, מעתיקים את הקישור של השיר מיוטיוב ומדביקים אותו בתוכנה, בוחרים MP3 או MP4 ולוחצים הורד. השיר נשמר בתיקיית ההורדות." } },
+    { "@type": "Question", "name": "האם התוכנה חינמית?",
+      "acceptedAnswer": { "@type": "Answer", "text": "כן. התוכנה חינמית לגמרי, בלי פרסומות ובלי מנוי." } },
+    { "@type": "Question", "name": "האם התוכנה עובדת בנטפרי ורימון?",
+      "acceptedAnswer": { "@type": "Answer", "text": "כן, התוכנה מותאמת לעבודה ברשתות מסוננות. כשהסינון חוסם סרטון מסוים, התוכנה מודיעה על כך ומאפשרת להעתיק את הקישור כדי לבקש אישור." } },
+    { "@type": "Question", "name": "מה עושה מגן התוכן?",
+      "acceptedAnswer": { "@type": "Answer", "text": "לפני כל הורדה התוכנה בודקת את שם הסרטון, הערוץ ופרטי האמן, וחוסמת תוכן שאינו ראוי. המגן פועל תמיד ואי אפשר לכבות אותו." } },
+    { "@type": "Question", "name": "אפשר להוריד פלייליסט שלם?",
+      "acceptedAnswer": { "@type": "Answer", "text": "כן. מדביקים קישור לפלייליסט, בוחרים אילו שירים להוריד, והם נשמרים בתיקייה בשם הפלייליסט, ממוספרים לפי הסדר." } },
+    { "@type": "Question", "name": "באילו פורמטים אפשר להוריד?",
+      "acceptedAnswer": { "@type": "Answer", "text": "שמע ב-MP3 באיכות לבחירה עד 320 קילו-ביט, וסרטונים ב-MP4 שמתנגנים בכל מחשב, ועוד פורמטים נוספים." } },
+    { "@type": "Question", "name": "צריך להתקין עוד תוכנות?",
+      "acceptedAnswer": { "@type": "Answer", "text": "לא. כל מה שהתוכנה צריכה כלול בקובץ ההתקנה, והכלים מתעדכנים לבד." } },
+    { "@type": "Question", "name": "חלונות מציג אזהרה בהתקנה. מה עושים?",
+      "acceptedAnswer": { "@type": "Answer", "text": "זו אזהרה רגילה לתוכנות חדשות של מפתחים עצמאיים. לוחצים על 'מידע נוסף' ואז על 'הפעל בכל זאת'." } }
+  ]
+}
+</script>
+
+<style>
+@font-face{font-family:Heebo;font-weight:400;font-display:swap;src:url(fonts/heebo-hebrew-400-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:Heebo;font-weight:400;font-display:swap;src:url(fonts/heebo-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+@font-face{font-family:Heebo;font-weight:700;font-display:swap;src:url(fonts/heebo-hebrew-700-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:Heebo;font-weight:700;font-display:swap;src:url(fonts/heebo-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+@font-face{font-family:"Frank Ruhl Libre";font-weight:900;font-display:swap;src:url(fonts/frank-ruhl-libre-hebrew-900-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:"Frank Ruhl Libre";font-weight:900;font-display:swap;src:url(fonts/frank-ruhl-libre-latin-900-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+
+:root{
+  --night:#0A1220;      /* רקע */
+  --deep:#0F1A2D;       /* משטחים */
+  --rule:#22314B;       /* קווים */
+  --text:#E9EEF5;
+  --muted:#97A6BC;
+  --cyan:#5FDDEC;       /* צבע המותג, כמו בתוכנה */
+  --gold:#E3BE72;       /* המגן */
+  --serif:"Frank Ruhl Libre","David Libre",Georgia,serif;
+  --sans:Heebo,"Segoe UI",Arial,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--night);color:var(--text);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skip{position:absolute;inset-inline-start:-999px}
+.skip:focus{inset-inline-start:16px;top:12px;background:var(--cyan);color:var(--night);padding:6px 12px;z-index:9}
+
+/* כותרת עליונה */
+.top{border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font:900 22px/1 var(--serif)}
+.brand img{width:32px;height:32px}
+.top nav{display:flex;gap:26px}
+.top nav a{color:var(--muted);text-decoration:none;font-size:15px}
+.top nav a:hover{color:var(--text)}
+
+/* פתיח */
+.hero{padding:72px 0 88px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-30% -10% auto auto;width:720px;height:720px;background:radial-gradient(closest-side,rgba(95,221,236,.10),transparent);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;position:relative}
+h1{font:900 clamp(38px,5.2vw,62px)/1.08 var(--serif);margin:0 0 22px;letter-spacing:-.5px}
+h1 small{display:block;font:700 clamp(19px,2vw,23px)/1.4 var(--sans);color:var(--muted);letter-spacing:0;margin-top:16px}
+.lede{font-size:19px;color:#C9D3E1;max-width:33em;margin:0 0 32px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.btn{display:inline-flex;align-items:center;gap:12px;background:var(--cyan);color:var(--night);font:700 19px/1 var(--sans);padding:18px 30px;border-radius:12px;text-decoration:none;box-shadow:0 0 0 1px rgba(95,221,236,.4),0 14px 40px -12px rgba(95,221,236,.55);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(95,221,236,.6),0 18px 46px -12px rgba(95,221,236,.7)}
+.btn svg{width:22px;height:22px}
+.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:15px}
+.facts li{display:flex;align-items:center;gap:6px}
+.facts li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+
+/* חלון התוכנה המדומה */
+.app{background:var(--deep);border:1px solid var(--rule);border-radius:16px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);overflow:hidden;font-size:14px}
+.app-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--rule);background:#0C1627}
+.app-bar b{font:900 16px var(--serif)}
+.chip{display:inline-flex;align-items:center;gap:6px;color:var(--gold);border:1px solid rgba(227,190,114,.4);border-radius:99px;padding:3px 10px;font-size:12.5px}
+.chip svg{width:14px;height:14px}
+.app-body{padding:18px}
+.url{display:flex;gap:8px;margin-bottom:16px}
+.url span{flex:1;direction:ltr;text-align:left;background:var(--night);border:1px solid var(--rule);border-radius:8px;padding:9px 12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}
+.url i{font-style:normal;background:var(--cyan);color:var(--night);font-weight:700;border-radius:8px;padding:9px 16px}
+.panel{border:1px solid var(--rule);border-radius:12px;padding:16px}
+.song{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.song strong{font-size:16px}
+.song em{font-style:normal;color:var(--muted);font-size:13px}
+.pct{font:700 40px/1 var(--sans);font-variant-numeric:tabular-nums;color:var(--cyan);margin:12px 0 10px}
+.track{height:8px;background:var(--night);border-radius:99px;overflow:hidden}
+.fill{height:100%;width:100%;background:linear-gradient(to left,var(--cyan),#8BE9F3);border-radius:99px;transform-origin:right;animation:fill 4.2s cubic-bezier(.3,.6,.4,1) .4s both}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.spark{display:block;width:100%;height:46px;margin:14px 0 12px}
+.spark path{stroke-dasharray:600;animation:draw 4.2s linear .4s both}
+@keyframes draw{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tiles div{background:var(--night);border-radius:8px;padding:8px 10px}
+.tiles small{display:block;color:var(--muted);font-size:12px}
+.tiles b{font-variant-numeric:tabular-nums}
+.done{margin-top:12px;display:flex;align-items:center;gap:8px;color:#8FE3A8;font-size:13px;opacity:0;animation:show .4s ease 4.7s forwards}
+.done svg{width:16px;height:16px}
+@keyframes show{to{opacity:1}}
+
+/* כותרות קטעים */
+section{padding:88px 0;border-top:1px solid var(--rule)}
+h2{font:900 clamp(30px,3.6vw,42px)/1.15 var(--serif);margin:0 0 14px}
+.intro{color:var(--muted);font-size:18px;max-width:36em;margin:0 0 44px}
+
+/* מגן התוכן */
+.shield{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;border:1px solid rgba(227,190,114,.35);background:linear-gradient(to left,rgba(227,190,114,.07),transparent 70%);border-radius:18px;padding:32px;margin-bottom:56px}
+.shield .ic{width:64px;height:64px;color:var(--gold)}
+.shield h3{font:900 26px/1.2 var(--serif);margin:0 0 8px;color:var(--gold)}
+.shield p{margin:0;color:#D3DAE6;max-width:44em}
+
+/* רשימת יכולות */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin:0;padding:0;list-style:none}
+.features li{padding:22px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:30px 1fr;gap:4px 14px}
+.features svg{width:26px;height:26px;color:var(--cyan);grid-row:span 2;margin-top:3px}
+.features h3{margin:0;font:700 18px/1.4 var(--sans)}
+.features p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* שלבים */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;list-style:none;margin:0;padding:0}
+.steps li{counter-increment:s;position:relative;padding-top:64px}
+.steps li::before{content:counter(s);position:absolute;top:0;inset-inline-start:0;font:900 46px/1 var(--serif);color:var(--cyan)}
+.steps h3{margin:0 0 6px;font:700 20px var(--sans)}
+.steps p{margin:0;color:var(--muted)}
+
+/* שאלות */
+.faq{max-width:780px}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 0;font:700 18.5px/1.4 var(--sans);display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--cyan);font-size:26px;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 22px;color:#C9D3E1;max-width:40em}
+
+/* הורדה */
+.get .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.req{list-style:none;margin:0;padding:24px 28px;border:1px solid var(--rule);border-radius:14px;background:var(--deep)}
+.req li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--rule)}
+.req li:last-child{border:0}
+.req span{color:var(--muted)}
+.alt{display:block;margin-top:18px;font-size:15px;color:var(--muted)}
+
+footer{border-top:1px solid var(--rule);padding:32px 0 44px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--muted)}
+
+@media (max-width:900px){
+  .hero{padding:48px 0 64px}
+  .hero .wrap,.get .wrap{grid-template-columns:1fr}
+  .features{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr;gap:22px}
+  .steps li{padding-top:0;padding-inline-start:56px}
+  .steps li::before{font-size:38px}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .top nav{display:none}
+  .features{grid-template-columns:1fr}
+  .shield{grid-template-columns:1fr;padding:24px}
+  .shield .ic{width:48px;height:48px}
+  section{padding:64px 0}
+  .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:0s!important;animation-delay:0s!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">דלגו לתוכן</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></symbol>
+    <symbol id="i-cut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6.5" r="2.5"/><circle cx="6" cy="17.5" r="2.5"/><path d="M8 8l12 10M8 16L20 6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 004 0"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M14 3H6.5v18h11V6.5z"/><path d="M14 3v3.5h3.5"/><path d="M10 16.5v-6l4-1v5.5" stroke-linecap="round"/><circle cx="9" cy="16.5" r="1.2"/><circle cx="13" cy="15" r="1.2"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 01-14 5.3M4 12a8 8 0 0114-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="favicon.svg" alt="" width="32" height="32">מוריד השירים</a>
+    <nav aria-label="ניווט ראשי">
+      <a href="#features">יכולות</a>
+      <a href="#how">איך זה עובד</a>
+      <a href="#faq">שאלות נפוצות</a>
+      <a href="#download">הורדה</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>מוריד השירים
+          <small>תוכנה כשרה להורדת שירים מיוטיוב למחשב</small>
+        </h1>
+        <p class="lede">מדביקים קישור, לוחצים הורד, והשיר כבר בתיקייה. כל הורדה עוברת קודם דרך מגן תוכן מובנה, והחיפוש מציג רק ערוצי מוזיקה יהודית מאושרים.</p>
+        <div class="cta">
+          <a class="btn dl-link" href="https://github.com/hanyna/morid/releases/download/v10.9/morid_setup_10.9.exe">
+            <svg aria-hidden="true"><use href="#i-down"/></svg>הורדה חינם למחשב
+          </a>
+          <ul class="facts">
+            <li>Windows 10 ו-11</li>
+            <li>בעברית מלאה</li>
+            <li>בלי פרסומות</li>
+            <li>גרסה <span class="ver">10.9.1</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="app" role="img" aria-label="חלון התוכנה בזמן הורדת שיר: ההורדה מתקדמת עד 100 אחוז ומגן התוכן פעיל">
+        <div class="app-bar">
+          <b>מוריד השירים</b>
+          <span class="chip"><svg><use href="#i-shield"/></svg>המגן פעיל</span>
+        </div>
+        <div class="app-body">
+          <div class="url"><span>https://www.youtube.com/watch?v=…</span><i>הורד</i></div>
+          <div class="panel">
+            <div class="song"><strong>ניגון שמחה</strong><em>MP3 ‏320</em></div>
+            <div class="pct" aria-hidden="true"><span id="pct">100</span>%</div>
+            <div class="track"><div class="fill"></div></div>
+            <svg class="spark" viewBox="0 0 300 46" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0 38 L15 34 L30 36 L45 26 L60 28 L75 18 L90 22 L105 14 L120 17 L135 10 L150 13 L165 8 L180 12 L195 7 L210 10 L225 6 L240 9 L255 5 L270 8 L285 6 L300 7" fill="none" stroke="#5FDDEC" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+            </svg>
+            <div class="tiles">
+              <div><small>מהירות</small><b>6.4 מ"ב/ש'</b></div>
+              <div><small>זמן</small><b>0:04</b></div>
+              <div><small>שלב</small><b>אודיו</b></div>
+            </div>
+            <div class="done"><svg><use href="#i-check"/></svg>נשמר בתיקיית ההורדות</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <h2>הכול מה שצריך כדי להוריד שירים בראש שקט</h2>
+      <p class="intro">תוכנה אחת למחשב, בלי אתרים מפוקפקים, בלי חלונות קופצים ובלי הפתעות.</p>
+
+      <div class="shield">
+        <svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>
+        <div>
+          <h3>מגן תוכן שעובד תמיד</h3>
+          <p>לפני כל הורדה התוכנה בודקת את שם הסרטון, הערוץ ופרטי האמן, וחוסמת תוכן שאינו ראוי, גם בקישורים שמדביקים וגם בפלייליסטים. המגן פועל כל הזמן ואין בו מתג כיבוי.</p>
+        </div>
+      </div>
+
+      <ul class="features">
+        <li><svg aria-hidden="true"><use href="#i-search"/></svg><h3>חיפוש סגור ומאושר</h3><p>מחפשים שם של זמר ומקבלים את השירים מהערוץ הרשמי שלו. יותר מ-1,200 ערוצים מאושרים, כולל ערוצי הדף היומי.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-net"/></svg><h3>עובד ברשתות מסוננות</h3><p>מותאם לנטפרי ולרימון. כשהסינון חוסם סרטון, התוכנה אומרת זאת בבירור ומעתיקה את הקישור לבקשת אישור.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-list"/></svg><h3>פלייליסטים בבחירה</h3><p>רואים את כל השירים, מסמנים מה להוריד, והם נשמרים בתיקייה בשם הפלייליסט, ממוספרים לפי הסדר.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-file"/></svg><h3>MP3 ו-MP4 שמתנגנים בכל מקום</h3><p>שמע באיכות לבחירה עד 320, וסרטונים בפורמט שכל מחשב ונגן פותחים בלי גמגומים.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-bolt"/></svg><h3>מאיץ הורדות מובנה</h3><p>מוריד בכמה חיבורים במקביל, וכמה שירים בבת אחת, בלי להתקין שום תוסף.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-cut"/></svg><h3>רינגטונים וחיתוך</h3><p>חותכים קטע משיר שהורד והופכים אותו לרינגטון, ומסירים את השקט שבתחילת השיר.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-bell"/></svg><h3>מעקב אחרי ערוצים</h3><p>עוקבים אחרי זמר אהוב ומקבלים הודעה כשיוצא שיר חדש. שום דבר לא יורד בלי לחיצה שלכם.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-refresh"/></svg><h3>מתעדכנת לבד</h3><p>התוכנה מודיעה כשיש גרסה חדשה, וכלי ההורדה מתעדכנים מעצמם כדי שההורדות ימשיכו לעבוד.</p></li>
+        <li><svg aria-hidden="true"><use href="#i-down"/></svg><h3>תור הורדות שלא הולך לאיבוד</h3><p>מדביקים כמה קישורים יחד. גם אם המחשב נכבה באמצע, התור חוזר בפתיחה הבאה.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>איך מורידים שיר מיוטיוב למחשב</h2>
+      <p class="intro">שלושה צעדים, ובפעם הבאה רק השניים האחרונים.</p>
+      <ol class="steps">
+        <li><h3>מתקינים את התוכנה</h3><p>מורידים את קובץ ההתקנה ומפעילים אותו. כל מה שצריך כלול בפנים.</p></li>
+        <li><h3>מדביקים קישור או מחפשים</h3><p>מעתיקים קישור מיוטיוב, או מקלידים שם של זמר בחיפוש המאושר.</p></li>
+        <li><h3>לוחצים הורד</h3><p>בוחרים MP3 או MP4, והשיר נשמר בתיקיית ההורדות שלכם.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>שאלות נפוצות</h2>
+      <div class="faq">
+        <details><summary>האם התוכנה חינמית?</summary><p>כן. התוכנה חינמית לגמרי, בלי פרסומות ובלי מנוי.</p></details>
+        <details><summary>האם התוכנה עובדת בנטפרי ורימון?</summary><p>כן, התוכנה מותאמת לעבודה ברשתות מסוננות. כשהסינון חוסם סרטון מסוים, התוכנה מודיעה על כך ומאפשרת להעתיק את הקישור כדי לבקש אישור.</p></details>
+        <details><summary>מה עושה מגן התוכן?</summary><p>לפני כל הורדה התוכנה בודקת את שם הסרטון, הערוץ ופרטי האמן, וחוסמת תוכן שאינו ראוי. המגן פועל תמיד ואי אפשר לכבות אותו.</p></details>
+        <details><summary>אפשר להוריד פלייליסט שלם?</summary><p>כן. מדביקים קישור לפלייליסט, בוחרים אילו שירים להוריד, והם נשמרים בתיקייה בשם הפלייליסט, ממוספרים לפי הסדר.</p></details>
+        <details><summary>באילו פורמטים אפשר להוריד?</summary><p>שמע ב-MP3 באיכות לבחירה עד 320 קילו-ביט, וסרטונים ב-MP4 שמתנגנים בכל מחשב, ועוד פורמטים נוספים.</p></details>
+        <details><summary>צריך להתקין עוד תוכנות?</summary><p>לא. כל מה שהתוכנה צריכה כלול בקובץ ההתקנה, והכלים מתעדכנים לבד.</p></details>
+        <details><summary>חלונות מציג אזהרה בהתקנה. מה עושים?</summary><p>זו אזהרה רגילה לתוכנות חדשות של מפתחים עצמאיים. לוחצים על „מידע נוסף” ואז על „הפעל בכל זאת”.</p></details>
+        <details><summary>כבר יש לי את התוכנה. איך מעדכנים?</summary><p>התוכנה מודיעה בעצמה כשיש גרסה חדשה ומעדכנת בלחיצה. אפשר גם להוריד את קובץ העדכון מ<a href="https://github.com/hanyna/morid/releases/latest">דף הגרסאות</a>.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" class="get">
+    <div class="wrap">
+      <div>
+        <h2>מורידים ומתחילים</h2>
+        <p class="intro">קובץ התקנה אחד, חבילה מלאה. ההתקנה לוקחת כדקה.</p>
+        <a class="btn dl-link" href="https://github.com/hanyna/morid/releases/download/v10.9/morid_setup_10.9.exe">
+          <svg aria-hidden="true"><use href="#i-down"/></svg>הורדת מוריד השירים
+        </a>
+        <a class="alt" href="https://github.com/hanyna/morid/releases/latest">כל הגרסאות וקבצי העדכון</a>
+      </div>
+      <ul class="req" aria-label="פרטי התוכנה">
+        <li><span>גרסה</span><b class="ver">10.9.1</b></li>
+        <li><span>מערכת</span><b>Windows 10 / 11</b></li>
+        <li><span>גודל</span><b class="size">כ-90 מ"ב</b></li>
+        <li><span>שפה</span><b>עברית</b></li>
+        <li><span>מחיר</span><b>חינם</b></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© מוריד השירים, חנינה. כל הזכויות שמורות.</span>
+    <span>יש להוריד רק תוכן שמותר להוריד ולהשתמש בו.</span>
+  </div>
+</footer>
+
+<script>
+// פרטי הגרסה העדכנית: נלקחים אוטומטית, כך שאין צורך לערוך את הדף בכל גרסה חדשה
+(function(){
+  function setText(sel, val){ document.querySelectorAll(sel).forEach(function(el){ el.textContent = val; }); }
+  fetch('version.json', {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(v){ if (v && v.version) setText('.ver', v.version); }).catch(function(){});
+  fetch('https://api.github.com/repos/hanyna/morid/releases/latest')
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(rel){
+      if (!rel || !rel.assets) return;
+      var a = rel.assets.find(function(x){ return /^morid_setup_.*\.exe$/i.test(x.name); });
+      if (!a) return;
+      document.querySelectorAll('.dl-link').forEach(function(el){ el.href = a.browser_download_url; });
+      setText('.size', 'כ-' + Math.round(a.size / 1048576) + ' מ"ב');
+    }).catch(function(){});
+
+  // ספירת האחוזים בחלון המדומה, בתיאום עם פס ההתקדמות
+  var pct = document.getElementById('pct');
+  if (pct && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var t0 = null, dur = 4200, delay = 400;
+    pct.textContent = '0';
+    requestAnimationFrame(function step(t){
+      if (t0 === null) t0 = t;
+      var x = Math.min(Math.max((t - t0 - delay) / dur, 0), 1);
+      var e = 1 - Math.pow(1 - x, 2.2);
+      pct.textContent = Math.round(e * 100);
+      if (x < 1) requestAnimationFrame(step);
+    });
+  }
+})();
+</script>
+</body>
+</html>
