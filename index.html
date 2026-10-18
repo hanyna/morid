@@ -7,9 +7,8 @@
 <meta name="description" content="תוכנה חינמית בעברית להורדת שירים וסרטונים מיוטיוב למחשב, עם מגן תוכן מובנה, חיפוש בערוצי מוזיקה יהודית מאושרים, הורדת פלייליסטים, MP3 ו-MP4. עובדת גם ברשתות מסוננות כמו נטפרי ורימון.">
 <meta name="keywords" content="תוכנה להורדת שירים, הורדת שירים מיוטיוב, מוריד שירים, תוכנה כשרה להורדת שירים, הורדת שירים חסידיים, הורדת מוזיקה יהודית, הורדת שירים בנטפרי, המרה ל-MP3">
 <link rel="canonical" href="https://hanyna.github.io/morid/">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#0A1220">
-<!-- אימות Google Search Console: הדביקו כאן את התגית שגוגל נותן, במקום השורה הזו -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0C0D10">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="he_IL">
@@ -43,7 +42,7 @@
   "softwareVersion": "10.9.1",
   "url": "https://hanyna.github.io/morid/",
   "image": "https://hanyna.github.io/morid/logo.png",
-  "screenshot": "https://hanyna.github.io/morid/og.png",
+  "screenshot": "https://hanyna.github.io/morid/shots/main.webp",
   "downloadUrl": "https://github.com/hanyna/morid/releases/latest",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ILS" },
   "author": { "@type": "Person", "name": "חנינה" }
@@ -57,7 +56,7 @@
     { "@type": "Question", "name": "איך מורידים שיר מיוטיוב למחשב?",
       "acceptedAnswer": { "@type": "Answer", "text": "מתקינים את מוריד השירים, מעתיקים את הקישור של השיר מיוטיוב ומדביקים אותו בתוכנה, בוחרים MP3 או MP4 ולוחצים הורד. השיר נשמר בתיקיית ההורדות." } },
     { "@type": "Question", "name": "האם התוכנה חינמית?",
-      "acceptedAnswer": { "@type": "Answer", "text": "כן. התוכנה חינמית לגמרי, בלי פרסומות ובלי מנוי." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "כן. התוכנה חינמית לגמרי, בלי מנוי ובלי תשלום." } },
     { "@type": "Question", "name": "האם התוכנה עובדת בנטפרי ורימון?",
       "acceptedAnswer": { "@type": "Answer", "text": "כן, התוכנה מותאמת לעבודה ברשתות מסוננות. כשהסינון חוסם סרטון מסוים, התוכנה מודיעה על כך ומאפשרת להעתיק את הקישור כדי לבקש אישור." } },
     { "@type": "Question", "name": "מה עושה מגן התוכן?",
@@ -69,7 +68,7 @@
     { "@type": "Question", "name": "צריך להתקין עוד תוכנות?",
       "acceptedAnswer": { "@type": "Answer", "text": "לא. כל מה שהתוכנה צריכה כלול בקובץ ההתקנה, והכלים מתעדכנים לבד." } },
     { "@type": "Question", "name": "חלונות מציג אזהרה בהתקנה. מה עושים?",
-      "acceptedAnswer": { "@type": "Answer", "text": "זו אזהרה רגילה לתוכנות חדשות של מפתחים עצמאיים. לוחצים על 'מידע נוסף' ואז על 'הפעל בכל זאת'." } }
+      "acceptedAnswer": { "@type": "Answer", "text": "זו אזהרה רגילה לתוכנות של מפתחים עצמאיים. לוחצים על 'מידע נוסף' ואז על 'הפעל בכל זאת'." } }
   ]
 }
 </script>
@@ -77,153 +76,252 @@
 <style>
 @font-face{font-family:Heebo;font-weight:400;font-display:swap;src:url(fonts/heebo-hebrew-400-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
 @font-face{font-family:Heebo;font-weight:400;font-display:swap;src:url(fonts/heebo-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+@font-face{font-family:Heebo;font-weight:500;font-display:swap;src:url(fonts/heebo-hebrew-500-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:Heebo;font-weight:500;font-display:swap;src:url(fonts/heebo-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
 @font-face{font-family:Heebo;font-weight:700;font-display:swap;src:url(fonts/heebo-hebrew-700-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
 @font-face{font-family:Heebo;font-weight:700;font-display:swap;src:url(fonts/heebo-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
+@font-face{font-family:Heebo;font-weight:800;font-display:swap;src:url(fonts/heebo-hebrew-800-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:Heebo;font-weight:800;font-display:swap;src:url(fonts/heebo-latin-800-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
 @font-face{font-family:"Frank Ruhl Libre";font-weight:900;font-display:swap;src:url(fonts/frank-ruhl-libre-hebrew-900-normal.woff2) format("woff2");unicode-range:U+0307-0308,U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
 @font-face{font-family:"Frank Ruhl Libre";font-weight:900;font-display:swap;src:url(fonts/frank-ruhl-libre-latin-900-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+2000-206F,U+2190-21FF}
 
+/* הצבעים לקוחים מהלוגו: שחור עמוק, זהב חם ואדום */
 :root{
-  --night:#0A1220;      /* רקע */
-  --deep:#0F1A2D;       /* משטחים */
-  --rule:#22314B;       /* קווים */
-  --text:#E9EEF5;
-  --muted:#97A6BC;
-  --cyan:#5FDDEC;       /* צבע המותג, כמו בתוכנה */
-  --gold:#E3BE72;       /* המגן */
+  --ink:#0C0D10;
+  --ink-2:#121419;
+  --panel:#171A20;
+  --rule:#262A33;
+  --rule-2:#333845;
+  --text:#EEEAE2;
+  --muted:#A29C90;
+  --gold:#E2B866;
+  --gold-hi:#F3D59A;
+  --gold-lo:#9C7A3A;
+  --red:#C53A3A;
+  --green:#7FCB95;
   --serif:"Frank Ruhl Libre","David Libre",Georgia,serif;
   --sans:Heebo,"Segoe UI",Arial,sans-serif;
-  --wrap:1120px;
+  --wrap:1180px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--night);color:var(--text);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
-a{color:var(--cyan)}
-:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:4px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--ink);color:var(--text);font:400 17px/1.75 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--gold)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
 .skip{position:absolute;inset-inline-start:-999px}
-.skip:focus{inset-inline-start:16px;top:12px;background:var(--cyan);color:var(--night);padding:6px 12px;z-index:9}
+.skip:focus{inset-inline-start:16px;top:12px;background:var(--gold);color:var(--ink);padding:6px 12px;z-index:99}
+.ic{width:24px;height:24px;flex:none}
 
-/* כותרת עליונה */
-.top{border-bottom:1px solid var(--rule)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font:900 22px/1 var(--serif)}
-.brand img{width:36px;height:36px;border-radius:8px}
-.top nav{display:flex;gap:26px}
-.top nav a{color:var(--muted);text-decoration:none;font-size:15px}
+/* ---------- כותרת דביקה ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(12,13,16,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font:900 21px/1 var(--serif)}
+.brand img{width:34px;height:34px;border-radius:8px}
+.top nav{display:flex;gap:24px;margin-inline-start:auto}
+.top nav a{color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
 .top nav a:hover{color:var(--text)}
+.top .mini{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--ink);text-decoration:none;font:700 15px/1 var(--sans);padding:11px 18px;border-radius:10px}
+.top .mini .ic{width:18px;height:18px}
 
-/* פתיח */
-.hero{padding:72px 0 88px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-30% -10% auto auto;width:720px;height:720px;background:radial-gradient(closest-side,rgba(95,221,236,.10),transparent);pointer-events:none}
-.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;position:relative}
-.hero-logo{display:block;width:96px;height:96px;margin:0 0 22px;border-radius:22px;box-shadow:0 18px 40px -14px rgba(0,0,0,.8)}
-h1{font:900 clamp(38px,5.2vw,62px)/1.08 var(--serif);margin:0 0 22px;letter-spacing:-.5px}
-h1 small{display:block;font:700 clamp(19px,2vw,23px)/1.4 var(--sans);color:var(--muted);letter-spacing:0;margin-top:16px}
-.lede{font-size:19px;color:#C9D3E1;max-width:33em;margin:0 0 32px}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
-.btn{display:inline-flex;align-items:center;gap:12px;background:var(--cyan);color:var(--night);font:700 19px/1 var(--sans);padding:18px 30px;border-radius:12px;text-decoration:none;box-shadow:0 0 0 1px rgba(95,221,236,.4),0 14px 40px -12px rgba(95,221,236,.55);transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(95,221,236,.6),0 18px 46px -12px rgba(95,221,236,.7)}
-.btn svg{width:22px;height:22px}
-.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--muted);font-size:15px}
-.facts li{display:flex;align-items:center;gap:6px}
-.facts li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+/* ---------- כפתורים ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,#D3A552);color:#1A1307;font:800 19px/1 var(--sans);padding:19px 32px;border-radius:14px;text-decoration:none;box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 0 0 1px rgba(0,0,0,.25),0 18px 40px -14px rgba(226,184,102,.65);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 0 0 1px rgba(0,0,0,.25),0 24px 50px -14px rgba(226,184,102,.8)}
+.btn .ic{width:22px;height:22px}
+.btn small{display:block;font:500 12.5px/1.2 var(--sans);opacity:.75;margin-top:4px}
+.ghost{display:inline-flex;align-items:center;gap:8px;color:var(--text);text-decoration:none;font:500 16px var(--sans);padding:12px 4px;border-bottom:1px solid var(--rule-2)}
+.ghost:hover{border-color:var(--gold);color:var(--gold-hi)}
 
-/* חלון התוכנה המדומה */
-.app{background:var(--deep);border:1px solid var(--rule);border-radius:16px;box-shadow:0 40px 80px -30px rgba(0,0,0,.7);overflow:hidden;font-size:14px}
-.app-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--rule);background:#0C1627}
-.app-bar b{font:900 16px var(--serif)}
-.chip{display:inline-flex;align-items:center;gap:6px;color:var(--gold);border:1px solid rgba(227,190,114,.4);border-radius:99px;padding:3px 10px;font-size:12.5px}
-.chip svg{width:14px;height:14px}
-.app-body{padding:18px}
-.url{display:flex;gap:8px;margin-bottom:16px}
-.url span{flex:1;direction:ltr;text-align:left;background:var(--night);border:1px solid var(--rule);border-radius:8px;padding:9px 12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}
-.url i{font-style:normal;background:var(--cyan);color:var(--night);font-weight:700;border-radius:8px;padding:9px 16px}
-.panel{border:1px solid var(--rule);border-radius:12px;padding:16px}
-.song{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.song strong{font-size:16px}
-.song em{font-style:normal;color:var(--muted);font-size:13px}
-.pct{font:700 40px/1 var(--sans);font-variant-numeric:tabular-nums;color:var(--cyan);margin:12px 0 10px}
-.track{height:8px;background:var(--night);border-radius:99px;overflow:hidden}
-.fill{height:100%;width:100%;background:linear-gradient(to left,var(--cyan),#8BE9F3);border-radius:99px;transform-origin:right;animation:fill 4.2s cubic-bezier(.3,.6,.4,1) .4s both}
-@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
-.spark{display:block;width:100%;height:46px;margin:14px 0 12px}
-.spark path{stroke-dasharray:600;animation:draw 4.2s linear .4s both}
-@keyframes draw{from{stroke-dashoffset:600}to{stroke-dashoffset:0}}
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.tiles div{background:var(--night);border-radius:8px;padding:8px 10px}
-.tiles small{display:block;color:var(--muted);font-size:12px}
-.tiles b{font-variant-numeric:tabular-nums}
-.done{margin-top:12px;display:flex;align-items:center;gap:8px;color:#8FE3A8;font-size:13px;opacity:0;animation:show .4s ease 4.7s forwards}
-.done svg{width:16px;height:16px}
-@keyframes show{to{opacity:1}}
+/* ---------- פתיח ---------- */
+.hero{position:relative;padding:76px 0 40px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-200px -200px auto auto;width:900px;height:900px;background:radial-gradient(closest-side,rgba(226,184,102,.13),transparent 70%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:auto auto -260px -260px;width:700px;height:700px;background:radial-gradient(closest-side,rgba(197,58,58,.10),transparent 70%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:56px;align-items:center}
+.hero-logo{width:84px;height:84px;border-radius:20px;margin-bottom:26px;box-shadow:0 20px 40px -16px rgba(0,0,0,.9),0 0 0 1px rgba(255,255,255,.06)}
+h1{font:900 clamp(44px,5.6vw,74px)/1.02 var(--serif);margin:0;letter-spacing:-.5px}
+.tag{font:700 clamp(19px,2vw,24px)/1.4 var(--sans);color:var(--gold);margin:16px 0 18px}
+.lede{font-size:18.5px;color:#CFC8BB;max-width:31em;margin:0 0 34px}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px}
+.facts{list-style:none;padding:0;margin:26px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.facts li{font-size:14px;color:var(--muted);border:1px solid var(--rule);border-radius:99px;padding:5px 13px;background:rgba(255,255,255,.02)}
 
-/* כותרות קטעים */
-section{padding:88px 0;border-top:1px solid var(--rule)}
-h2{font:900 clamp(30px,3.6vw,42px)/1.15 var(--serif);margin:0 0 14px}
-.intro{color:var(--muted);font-size:18px;max-width:36em;margin:0 0 44px}
+/* חלון התוכנה */
+.window{position:relative;border-radius:14px;background:#1D1F25;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 60px 120px -40px rgba(0,0,0,.95),0 30px 60px -30px rgba(0,0,0,.7);overflow:hidden}
+.window .bar{display:flex;align-items:center;gap:10px;height:34px;padding:0 12px;background:#24262D;border-bottom:1px solid #30333C;font-size:12.5px;color:#B7B1A6}
+.window .bar img{width:16px;height:16px;border-radius:3px}
+.window .bar .ctl{margin-inline-start:auto;display:flex;gap:14px;direction:ltr}
+.window .bar .ctl i{width:10px;height:10px;border:1.5px solid #8C877D;display:block}
+.window .bar .ctl i:first-child{height:0;border-width:1.5px 0 0;align-self:center}
+.window .bar .ctl i:last-child{border:0;position:relative}
+.window .bar .ctl i:last-child::before,.window .bar .ctl i:last-child::after{content:"";position:absolute;left:4px;top:-2px;width:1.5px;height:14px;background:#8C877D;transform:rotate(45deg)}
+.window .bar .ctl i:last-child::after{transform:rotate(-45deg)}
+.window .shot{display:block;width:100%;height:auto;aspect-ratio:var(--ar,16/10);object-fit:cover;object-position:top center;background:#EEF1F4}
+.zoom{all:unset;cursor:zoom-in;display:block}
+.zoom:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:14px}
+.hero .window{transform:perspective(1800px) rotateY(6deg) rotateX(2deg);transform-origin:left center}
+.float{position:absolute;display:flex;align-items:center;gap:10px;background:rgba(23,26,32,.92);backdrop-filter:blur(8px);border:1px solid var(--rule-2);border-radius:14px;padding:12px 16px;font-size:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.9);white-space:nowrap}
+.float b{display:block;font-size:15px}
+.float small{display:block;color:var(--muted);font-size:12.5px;line-height:1.3}
+.float .ic{color:var(--gold)}
+.float.f1{inset-inline-start:-34px;bottom:44px}
+.float.f2{inset-inline-end:-18px;top:-22px}
+.float.f2 .ic{color:var(--green)}
 
-/* מגן התוכן */
-.shield{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;border:1px solid rgba(227,190,114,.35);background:linear-gradient(to left,rgba(227,190,114,.07),transparent 70%);border-radius:18px;padding:32px;margin-bottom:56px}
-.shield .ic{width:64px;height:64px;color:var(--gold)}
-.shield h3{font:900 26px/1.2 var(--serif);margin:0 0 8px;color:var(--gold)}
-.shield p{margin:0;color:#D3DAE6;max-width:44em}
+/* ---------- רצועת מספרים ---------- */
+.stats{border-block:1px solid var(--rule);background:var(--ink-2)}
+.stats ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.stats li{padding:30px 24px;text-align:center;border-inline-start:1px solid var(--rule)}
+.stats li:first-child{border-inline-start:0}
+.stats b{display:block;font:900 40px/1.1 var(--serif);color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.stats span{color:var(--muted);font-size:15px}
 
-/* רשימת יכולות */
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;margin:0;padding:0;list-style:none}
-.features li{padding:22px 0;border-top:1px solid var(--rule);display:grid;grid-template-columns:30px 1fr;gap:4px 14px}
-.features svg{width:26px;height:26px;color:var(--cyan);grid-row:span 2;margin-top:3px}
-.features h3{margin:0;font:700 18px/1.4 var(--sans)}
-.features p{margin:0;color:var(--muted);font-size:15.5px}
+/* ---------- קטעים ---------- */
+section{padding:110px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font:700 15px var(--sans);margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+h2{font:900 clamp(34px,4.2vw,52px)/1.1 var(--serif);margin:0 0 18px;letter-spacing:-.3px}
+.intro{color:var(--muted);font-size:19px;max-width:34em;margin:0}
+.head-c{text-align:center;margin:0 auto 64px;max-width:760px}
+.head-c .intro{margin:0 auto}
 
-/* שלבים */
-.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;list-style:none;margin:0;padding:0}
-.steps li{counter-increment:s;position:relative;padding-top:64px}
-.steps li::before{content:counter(s);position:absolute;top:0;inset-inline-start:0;font:900 46px/1 var(--serif);color:var(--cyan)}
+/* ---------- המגן ---------- */
+.shield-sec{background:radial-gradient(1200px 500px at 50% 0,rgba(226,184,102,.07),transparent 70%)}
+.shield-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.layers{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:14px}
+.layers li{display:grid;grid-template-columns:44px 1fr;gap:4px 16px;padding:20px;border:1px solid var(--rule);border-radius:16px;background:var(--panel)}
+.layers .ic{width:44px;height:44px;padding:10px;border-radius:12px;background:rgba(226,184,102,.12);color:var(--gold);grid-row:span 2}
+.layers h3{margin:0;font:700 18px/1.4 var(--sans)}
+.layers p{margin:0;color:var(--muted);font-size:15.5px}
+.blocked{position:relative;border-radius:20px;padding:34px;background:linear-gradient(160deg,#1A1C22,#121318);border:1px solid var(--rule-2);box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.blocked .row{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;background:#0F1014;border:1px solid var(--rule);margin-bottom:12px;font-size:15px}
+.blocked .row .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.blocked .row .st{font-size:13px;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.ok{color:var(--green);background:rgba(127,203,149,.12)}
+.no{color:#F08A8A;background:rgba(197,58,58,.16)}
+.blocked .msg{margin-top:18px;display:flex;gap:14px;align-items:flex-start;padding:18px;border-radius:14px;background:rgba(197,58,58,.10);border:1px solid rgba(197,58,58,.4)}
+.blocked .msg .ic{color:#F08A8A;width:28px;height:28px}
+.blocked .msg b{display:block;margin-bottom:2px}
+.blocked .msg span{color:#D6B3B3;font-size:14.5px}
+.blocked .badge{position:absolute;top:-16px;inset-inline-end:26px;background:var(--gold);color:var(--ink);font:800 13px var(--sans);padding:6px 14px;border-radius:99px}
+
+/* ---------- מצגת יכולות ---------- */
+.feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center;padding:56px 0}
+.feature + .feature{border-top:1px solid var(--rule)}
+.feature.flip > :first-child{order:2}
+.feature h3{font:900 clamp(28px,3vw,38px)/1.15 var(--serif);margin:0 0 14px}
+.feature p{color:#CFC8BB;margin:0 0 20px;font-size:17.5px}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;color:var(--text);font-size:16px}
+.ticks li::before{content:"";flex:none;width:20px;height:20px;margin-top:4px;border-radius:50%;background:rgba(226,184,102,.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E2B866' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.feature .window{box-shadow:0 0 0 1px rgba(255,255,255,.08),0 50px 100px -40px rgba(0,0,0,.95)}
+
+/* ---------- רשת יכולות קטנות ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:28px;border:1px solid var(--rule);border-radius:18px;background:var(--panel);transition:border-color .2s}
+.card:hover{border-color:var(--rule-2)}
+.card .ic{width:46px;height:46px;padding:11px;border-radius:13px;background:rgba(226,184,102,.12);color:var(--gold);margin-bottom:18px}
+.card h3{margin:0 0 6px;font:700 19px/1.4 var(--sans)}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* ---------- השוואה ---------- */
+.compare{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--rule);border-radius:18px;overflow:hidden;background:var(--panel)}
+.compare th,.compare td{padding:18px 22px;text-align:start;border-bottom:1px solid var(--rule);font-size:16px}
+.compare tr:last-child td{border-bottom:0}
+.compare thead th{background:#1C1F26;font-weight:700;font-size:15px;color:var(--muted)}
+.compare thead th.us{color:var(--gold-hi)}
+.compare td.us{background:rgba(226,184,102,.06);font-weight:700}
+.compare .y,.compare .n{display:inline-flex;align-items:center;gap:8px}
+.compare .y::before,.compare .n::before{content:"";width:20px;height:20px;border-radius:50%;flex:none}
+.compare .y::before{background:rgba(127,203,149,.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237FCB95' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center/12px no-repeat}
+.compare .n::before{background:rgba(197,58,58,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F08A8A' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M7 7l10 10M17 7L7 17'/%3E%3C/svg%3E") center/11px no-repeat}
+.compare-note{color:var(--muted);font-size:14px;margin:14px 0 0}
+
+/* ---------- נטפרי ---------- */
+.net{display:grid;grid-template-columns:auto 1fr auto;gap:36px;align-items:center;padding:44px;border-radius:24px;border:1px solid var(--rule-2);background:linear-gradient(120deg,#17191F,#111216)}
+.net .ic{width:72px;height:72px;color:var(--gold)}
+.net h2{font-size:clamp(28px,3vw,38px);margin-bottom:8px}
+.net p{margin:0;color:#CFC8BB;max-width:40em}
+
+/* ---------- שלבים ---------- */
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.steps li{counter-increment:s;position:relative;padding:32px 28px;border-radius:18px;border:1px solid var(--rule);background:var(--panel)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;margin-bottom:20px;font:900 26px/1 var(--serif);color:var(--ink);background:linear-gradient(180deg,var(--gold-hi),var(--gold))}
 .steps h3{margin:0 0 6px;font:700 20px var(--sans)}
 .steps p{margin:0;color:var(--muted)}
 
-/* שאלות */
-.faq{max-width:780px}
+/* ---------- מה חדש ---------- */
+.news{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.ver{display:inline-block;font:900 64px/1 var(--serif);color:var(--gold-hi)}
+.news ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.news li{padding:16px 0;border-bottom:1px solid var(--rule);display:flex;gap:14px}
+.news li::before{content:"";flex:none;width:8px;height:8px;margin-top:11px;border-radius:50%;background:var(--gold)}
+
+/* ---------- שאלות ---------- */
+.faq{max-width:820px;margin:0 auto}
 .faq details{border-bottom:1px solid var(--rule)}
-.faq summary{cursor:pointer;list-style:none;padding:20px 0;font:700 18.5px/1.4 var(--sans);display:flex;justify-content:space-between;gap:20px}
+.faq summary{cursor:pointer;list-style:none;padding:22px 0;font:700 19px/1.4 var(--sans);display:flex;justify-content:space-between;gap:20px}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--cyan);font-size:26px;line-height:1;transition:transform .2s}
+.faq summary::after{content:"+";color:var(--gold);font-size:28px;line-height:1;transition:transform .2s}
 .faq details[open] summary::after{transform:rotate(45deg)}
-.faq details p{margin:0 0 22px;color:#C9D3E1;max-width:40em}
+.faq details p{margin:0 0 24px;color:#CFC8BB;max-width:44em}
 
-/* הורדה */
-.get .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
-.req{list-style:none;margin:0;padding:24px 28px;border:1px solid var(--rule);border-radius:14px;background:var(--deep)}
-.req li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--rule)}
-.req li:last-child{border:0}
-.req span{color:var(--muted)}
-.alt{display:block;margin-top:18px;font-size:15px;color:var(--muted)}
+/* ---------- הורדה ---------- */
+.get{position:relative;overflow:hidden;text-align:center;border-top:1px solid var(--rule);background:radial-gradient(900px 420px at 50% 100%,rgba(226,184,102,.14),transparent 70%)}
+.get .logo{width:110px;height:110px;border-radius:26px;margin:0 auto 28px;box-shadow:0 30px 60px -20px rgba(0,0,0,.95)}
+.get .intro{margin:0 auto 36px}
+.spec{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding:0;margin:30px 0 0;color:var(--muted);font-size:15px}
+.spec b{color:var(--text);font-weight:500}
+.warn{max-width:620px;margin:40px auto 0;padding:18px 22px;border-radius:14px;border:1px dashed var(--rule-2);color:var(--muted);font-size:15px;text-align:start}
+.warn b{color:var(--text)}
 
-footer{border-top:1px solid var(--rule);padding:32px 0 44px;color:var(--muted);font-size:14px}
+footer{border-top:1px solid var(--rule);padding:34px 0 46px;color:var(--muted);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 footer a{color:var(--muted)}
 
-@media (max-width:900px){
-  .hero{padding:48px 0 64px}
-  .hero .wrap,.get .wrap{grid-template-columns:1fr}
-  .features{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr;gap:22px}
-  .steps li{padding-top:0;padding-inline-start:56px}
-  .steps li::before{font-size:38px}
+/* ---------- הגדלת תמונה ---------- */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1400px,94vw);max-height:92vh}
+dialog.lb::backdrop{background:rgba(5,5,7,.88);backdrop-filter:blur(4px)}
+dialog.lb img{max-height:88vh;width:auto;border-radius:12px;box-shadow:0 40px 100px rgba(0,0,0,.8)}
+dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.6);color:#fff;font-size:22px;cursor:pointer}
+
+/* ---------- כניסה ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:980px){
+  .hero{padding:48px 0 24px}
+  .hero-grid,.shield-grid,.feature,.news{grid-template-columns:1fr;gap:40px}
+  .feature.flip > :first-child{order:0}
+  .hero .window{transform:none}
+  .float.f1{inset-inline-start:12px;bottom:-22px}
+  .float.f2{inset-inline-end:12px;top:-18px}
+  .grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .stats ul{grid-template-columns:1fr 1fr}
+  .stats li:nth-child(3){border-inline-start:0}
+  .stats li:nth-child(n+3){border-top:1px solid var(--rule)}
+  .net{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .top nav{display:none}
+  .top .mini{margin-inline-start:auto}
 }
-@media (max-width:600px){
+@media (max-width:620px){
   body{font-size:16px}
   .wrap{padding:0 16px}
-  .top nav{display:none}
-  .features{grid-template-columns:1fr}
-  .shield{grid-template-columns:1fr;padding:24px}
-  .shield .ic{width:48px;height:48px}
-  section{padding:64px 0}
-  .btn{width:100%;justify-content:center}
+  section{padding:72px 0}
+  .grid{grid-template-columns:1fr}
+  .btn{width:100%}
+  .float{display:none}
+  .stats b{font-size:32px}
+  .compare th,.compare td{padding:14px 12px;font-size:14.5px}
+  .blocked{padding:22px}
+  .net{padding:30px 22px}
 }
 @media (prefers-reduced-motion:reduce){
-  *{animation-duration:0s!important;animation-delay:0s!important;transition:none!important}
+  *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
 }
 </style>
 </head>
@@ -234,150 +332,292 @@ footer a{color:var(--muted)}
   <defs>
     <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 10l6 6 6-6M4 20h16"/></symbol>
     <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-shield-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9.5 9.5l5 5M14.5 9.5l-5 5"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
     <symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></symbol>
-    <symbol id="i-net" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/></symbol>
+    <symbol id="i-net" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.5 5.4 3.5 8.5s-1 5.9-3.5 8.5c-2.5-2.6-3.5-5.4-3.5-8.5s1-5.9 3.5-8.5z"/></symbol>
     <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></symbol>
     <symbol id="i-cut" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6" cy="6.5" r="2.5"/><circle cx="6" cy="17.5" r="2.5"/><path d="M8 8l12 10M8 16L20 6"/></symbol>
     <symbol id="i-bell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 004 0"/></symbol>
     <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M14 3H6.5v18h11V6.5z"/><path d="M14 3v3.5h3.5"/><path d="M10 16.5v-6l4-1v5.5" stroke-linecap="round"/><circle cx="9" cy="16.5" r="1.2"/><circle cx="13" cy="15" r="1.2"/></symbol>
     <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 01-14 5.3M4 12a8 8 0 0114-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></symbol>
+    <symbol id="i-queue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="5" rx="1.5"/><rect x="3.5" y="11" width="17" height="5" rx="1.5"/><path d="M7 20h10"/></symbol>
+    <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 102.5-6L3.5 8.5"/><path d="M3.5 4v4.5H8M12 8v4.5l3 2"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 018 0v3"/></symbol>
   </defs>
 </svg>
 
-<header class="top">
+<header class="top" id="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="favicon-96.png" alt="הלוגו של מוריד השירים" width="36" height="36">מוריד השירים</a>
+    <a class="brand" href="./"><img src="favicon-96.png" alt="הלוגו של מוריד השירים" width="34" height="34">מוריד השירים</a>
     <nav aria-label="ניווט ראשי">
+      <a href="#shield">המגן</a>
       <a href="#features">יכולות</a>
-      <a href="#how">איך זה עובד</a>
+      <a href="#compare">השוואה</a>
       <a href="#faq">שאלות נפוצות</a>
-      <a href="#download">הורדה</a>
     </nav>
+    <a class="mini dl-link" href="https://github.com/hanyna/morid/releases/download/v10.9/morid_setup_10.9.exe"><svg class="ic" aria-hidden="true"><use href="#i-down"/></svg>הורדה</a>
   </div>
 </header>
 
 <main id="main">
+
+  <!-- פתיח -->
   <div class="hero">
-    <div class="wrap">
+    <div class="wrap hero-grid">
       <div>
-        <img class="hero-logo" src="logo.png" alt="מוריד השירים – תוכנה להורדת שירים מיוטיוב למחשב" width="96" height="96">
-        <h1>מוריד השירים
-          <small>תוכנה כשרה להורדת שירים מיוטיוב למחשב</small>
-        </h1>
-        <p class="lede">מדביקים קישור, לוחצים הורד, והשיר כבר בתיקייה. כל הורדה עוברת קודם דרך מגן תוכן מובנה, והחיפוש מציג רק ערוצי מוזיקה יהודית מאושרים.</p>
+        <img class="hero-logo" src="logo.png" alt="מוריד השירים – תוכנה להורדת שירים מיוטיוב למחשב" width="84" height="84">
+        <h1>מוריד השירים</h1>
+        <p class="tag">תוכנה כשרה להורדת שירים מיוטיוב למחשב</p>
+        <p class="lede">נגינה, חזנות ושיעורי תורה – ישר לתיקייה במחשב, בלחיצה אחת. כל הורדה עוברת קודם דרך מגן תוכן שאין לו מתג כיבוי, והחיפוש מציג רק ערוצים מאושרים.</p>
         <div class="cta">
           <a class="btn dl-link" href="https://github.com/hanyna/morid/releases/download/v10.9/morid_setup_10.9.exe">
-            <svg aria-hidden="true"><use href="#i-down"/></svg>הורדה חינם למחשב
+            <svg class="ic" aria-hidden="true"><use href="#i-down"/></svg>
+            <span>הורדה חינם למחשב<small>גרסה <span class="ver-n">10.9.1</span> · Windows 10 ו-11</small></span>
           </a>
-          <ul class="facts">
-            <li>Windows 10 ו-11</li>
-            <li>בעברית מלאה</li>
-            <li>בלי פרסומות</li>
-            <li>גרסה <span class="ver">10.9.1</span></li>
-          </ul>
+          <a class="ghost" href="#features">לראות את התוכנה מבפנים</a>
         </div>
+        <ul class="facts" aria-label="בקצרה">
+          <li>חינם לגמרי</li>
+          <li>בעברית מלאה</li>
+          <li>עובד בנטפרי וברימון</li>
+          <li>מתעדכן לבד</li>
+        </ul>
       </div>
 
-      <div class="app" role="img" aria-label="חלון התוכנה בזמן הורדת שיר: ההורדה מתקדמת עד 100 אחוז ומגן התוכן פעיל">
-        <div class="app-bar">
-          <b>מוריד השירים</b>
-          <span class="chip"><svg><use href="#i-shield"/></svg>המגן פעיל</span>
-        </div>
-        <div class="app-body">
-          <div class="url"><span>https://www.youtube.com/watch?v=…</span><i>הורד</i></div>
-          <div class="panel">
-            <div class="song"><strong>ניגון שמחה</strong><em>MP3 ‏320</em></div>
-            <div class="pct" aria-hidden="true"><span id="pct">100</span>%</div>
-            <div class="track"><div class="fill"></div></div>
-            <svg class="spark" viewBox="0 0 300 46" preserveAspectRatio="none" aria-hidden="true">
-              <path d="M0 38 L15 34 L30 36 L45 26 L60 28 L75 18 L90 22 L105 14 L120 17 L135 10 L150 13 L165 8 L180 12 L195 7 L210 10 L225 6 L240 9 L255 5 L270 8 L285 6 L300 7" fill="none" stroke="#5FDDEC" stroke-width="2" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
-            </svg>
-            <div class="tiles">
-              <div><small>מהירות</small><b>6.4 מ"ב/ש'</b></div>
-              <div><small>זמן</small><b>0:04</b></div>
-              <div><small>שלב</small><b>אודיו</b></div>
-            </div>
-            <div class="done"><svg><use href="#i-check"/></svg>נשמר בתיקיית ההורדות</div>
+      <div style="position:relative">
+        <button class="zoom" data-full="shots/main.webp" aria-label="הגדלת צילום המסך של החלון הראשי">
+          <div class="window">
+            <div class="bar"><img src="favicon-48.png" alt="">מוריד השירים<span class="ctl" aria-hidden="true"><i></i><i></i><i></i></span></div>
+            <img class="shot" src="shots/main.webp" alt="החלון הראשי של מוריד השירים בזמן הורדת שיר, עם לוח ההתקדמות ותור ההורדות" width="1280" height="800" style="--ar:16/10">
           </div>
-        </div>
+        </button>
+        <div class="float f2" aria-hidden="true"><svg class="ic"><use href="#i-shield"/></svg><span><b>המגן פעיל</b><small>כל הורדה נבדקת</small></span></div>
+        <div class="float f1" aria-hidden="true"><svg class="ic"><use href="#i-search"/></svg><span><b>1,200+ ערוצים</b><small>בחיפוש המאושר</small></span></div>
       </div>
     </div>
   </div>
 
-  <section id="features">
+  <!-- מספרים -->
+  <div class="stats">
     <div class="wrap">
-      <h2>הכול מה שצריך כדי להוריד שירים בראש שקט</h2>
-      <p class="intro">תוכנה אחת למחשב, בלי אתרים מפוקפקים, בלי חלונות קופצים ובלי הפתעות.</p>
-
-      <div class="shield">
-        <svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>
-        <div>
-          <h3>מגן תוכן שעובד תמיד</h3>
-          <p>לפני כל הורדה התוכנה בודקת את שם הסרטון, הערוץ ופרטי האמן, וחוסמת תוכן שאינו ראוי, גם בקישורים שמדביקים וגם בפלייליסטים. המגן פועל כל הזמן ואין בו מתג כיבוי.</p>
-        </div>
-      </div>
-
-      <ul class="features">
-        <li><svg aria-hidden="true"><use href="#i-search"/></svg><h3>חיפוש סגור ומאושר</h3><p>מחפשים שם של זמר ומקבלים את השירים מהערוץ הרשמי שלו. יותר מ-1,200 ערוצים מאושרים, כולל ערוצי הדף היומי.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-net"/></svg><h3>עובד ברשתות מסוננות</h3><p>מותאם לנטפרי ולרימון. כשהסינון חוסם סרטון, התוכנה אומרת זאת בבירור ומעתיקה את הקישור לבקשת אישור.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-list"/></svg><h3>פלייליסטים בבחירה</h3><p>רואים את כל השירים, מסמנים מה להוריד, והם נשמרים בתיקייה בשם הפלייליסט, ממוספרים לפי הסדר.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-file"/></svg><h3>MP3 ו-MP4 שמתנגנים בכל מקום</h3><p>שמע באיכות לבחירה עד 320, וסרטונים בפורמט שכל מחשב ונגן פותחים בלי גמגומים.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-bolt"/></svg><h3>מאיץ הורדות מובנה</h3><p>מוריד בכמה חיבורים במקביל, וכמה שירים בבת אחת, בלי להתקין שום תוסף.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-cut"/></svg><h3>רינגטונים וחיתוך</h3><p>חותכים קטע משיר שהורד והופכים אותו לרינגטון, ומסירים את השקט שבתחילת השיר.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-bell"/></svg><h3>מעקב אחרי ערוצים</h3><p>עוקבים אחרי זמר אהוב ומקבלים הודעה כשיוצא שיר חדש. שום דבר לא יורד בלי לחיצה שלכם.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-refresh"/></svg><h3>מתעדכנת לבד</h3><p>התוכנה מודיעה כשיש גרסה חדשה, וכלי ההורדה מתעדכנים מעצמם כדי שההורדות ימשיכו לעבוד.</p></li>
-        <li><svg aria-hidden="true"><use href="#i-down"/></svg><h3>תור הורדות שלא הולך לאיבוד</h3><p>מדביקים כמה קישורים יחד. גם אם המחשב נכבה באמצע, התור חוזר בפתיחה הבאה.</p></li>
+      <ul>
+        <li><b>₪0</b><span>בלי מנוי ובלי תשלום</span></li>
+        <li><b>1,200+</b><span>ערוצים מאושרים בחיפוש</span></li>
+        <li><b>320</b><span>קילו-ביט, איכות MP3 מרבית</span></li>
+        <li><b>100%</b><span>מההורדות עוברות במגן</span></li>
       </ul>
+    </div>
+  </div>
+
+  <!-- המגן -->
+  <section id="shield" class="shield-sec">
+    <div class="wrap shield-grid">
+      <div class="reveal">
+        <span class="eyebrow">מגן התוכן</span>
+        <h2>שומר עליכם עוד לפני שהשיר מתחיל לרדת</h2>
+        <p class="intro">התוכנה לא סומכת על המזל. לפני כל הורדה היא בודקת מה בדיוק עומד לרדת, ועוצרת כל מה שאינו ראוי.</p>
+        <ul class="layers">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><h3>בדיקה של כל קישור</h3><p>שם הסרטון, שם הערוץ ופרטי האמן נבדקים לפני ההורדה, גם בכל שיר ושיר בתוך פלייליסט.</p></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><h3>חיפוש סגור</h3><p>בחיפוש מופיעים רק ערוצים מתוך רשימה מאושרת. מה שלא ברשימה פשוט לא מופיע.</p></li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><h3>אין מתג כיבוי</h3><p>המגן פועל תמיד. אי אפשר לכבות אותו מההגדרות, וגם לא בטעות.</p></li>
+        </ul>
+      </div>
+      <div class="blocked reveal" role="img" aria-label="דוגמה: שני שירים עברו את הבדיקה, וסרטון אחד נחסם על ידי המגן">
+        <span class="badge">כך זה נראה</span>
+        <div class="row"><span class="t">ניגון שמחה – מקהלת ילדים</span><span class="st ok">עבר בדיקה</span></div>
+        <div class="row"><span class="t">מחרוזת חתונות – תזמורת</span><span class="st ok">עבר בדיקה</span></div>
+        <div class="row"><span class="t">סרטון שאינו ראוי</span><span class="st no">נחסם</span></div>
+        <div class="msg"><svg class="ic" aria-hidden="true"><use href="#i-shield-x"/></svg><div><b>ההגנה שלנו חסמה את הסרטון</b><span>הסרטון לא ירד למחשב. אפשר להמשיך להוריד את שאר השירים כרגיל.</span></div></div>
+      </div>
     </div>
   </section>
 
+  <!-- יכולות עם צילומי מסך -->
+  <section id="features" style="padding-top:40px">
+    <div class="wrap">
+      <div class="head-c reveal">
+        <span class="eyebrow">מבפנים</span>
+        <h2>כל מה שצריך, בלי שום דבר מיותר</h2>
+        <p class="intro">תוכנה אחת למחשב במקום אתרים מפוקפקים, חלונות קופצים והורדות שנתקעות באמצע.</p>
+      </div>
+
+      <div class="feature reveal">
+        <div>
+          <span class="eyebrow">חיפוש מאושר</span>
+          <h3>מקלידים שם של זמר, ומקבלים את כל השירים שלו</h3>
+          <p>החיפוש מגיע ישר לערוץ הרשמי של האמן, ומציג את כל השירים שהעלה. אפשר להוריד שיר אחד או כמה ביחד.</p>
+          <ul class="ticks">
+            <li>יותר מ-1,200 ערוצים מאושרים, כולל ערוצי הדף היומי</li>
+            <li>מבין גם שגיאות כתיב בשם הזמר</li>
+            <li>עוקבים אחרי ערוץ ומקבלים הודעה כשעולה שיר חדש</li>
+          </ul>
+        </div>
+        <button class="zoom" data-full="shots/search.webp" aria-label="הגדלת צילום המסך של החיפוש">
+          <div class="window"><div class="bar"><img src="favicon-48.png" alt="">מוריד השירים · חיפוש<span class="ctl" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <img class="shot" src="shots/search.webp" alt="מסך החיפוש של מוריד השירים: חיפוש לפי שם זמר והשירים מהערוץ המאושר שלו" width="1280" height="800" loading="lazy" style="--ar:16/10"></div>
+        </button>
+      </div>
+
+      <div class="feature flip reveal">
+        <div>
+          <span class="eyebrow">פלייליסטים</span>
+          <h3>פלייליסט שלם, בדיוק בשירים שבחרתם</h3>
+          <p>מדביקים קישור לפלייליסט ורואים את כל השירים לפי הסדר. מסמנים מה להוריד, והשירים נשמרים בתיקייה בשם הפלייליסט, ממוספרים.</p>
+          <ul class="ticks">
+            <li>רואים מראש מה המגן חוסם ומה כבר הורדתם</li>
+            <li>עובד גם עם YouTube Music ואלבומים</li>
+            <li>קישור לשיר בודד לא הופך בטעות לפלייליסט שלם</li>
+          </ul>
+        </div>
+        <button class="zoom" data-full="shots/playlist.webp" aria-label="הגדלת צילום המסך של חלון הפלייליסט">
+          <div class="window"><div class="bar"><img src="favicon-48.png" alt="">בחירת שירים מהפלייליסט<span class="ctl" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <img class="shot" src="shots/playlist.webp" alt="חלון בחירת השירים מפלייליסט במוריד השירים" width="1280" height="800" loading="lazy" style="--ar:16/10"></div>
+        </button>
+      </div>
+
+      <div class="feature reveal">
+        <div>
+          <span class="eyebrow">לוח הורדה</span>
+          <h3>רואים בדיוק מה קורה, בזמן אמת</h3>
+          <p>אחוזים, מהירות, זמן ושלב, ותור הורדות שלא הולך לאיבוד. גם אם המחשב נכבה באמצע, התור חוזר בפתיחה הבאה.</p>
+          <ul class="ticks">
+            <li>מאיץ הורדות מובנה, כמה שירים במקביל</li>
+            <li>MP3 עד 320, ו-MP4 שמתנגן חלק בכל מחשב</li>
+            <li>חיתוך השקט שבתחילת השיר</li>
+          </ul>
+        </div>
+        <button class="zoom" data-full="shots/queue.webp" aria-label="הגדלת צילום המסך של תור ההורדות">
+          <div class="window"><div class="bar"><img src="favicon-48.png" alt="">מוריד השירים · הורדה<span class="ctl" aria-hidden="true"><i></i><i></i><i></i></span></div>
+          <img class="shot" src="shots/queue.webp" alt="לוח ההורדה ותור ההורדות של מוריד השירים" width="1280" height="800" loading="lazy" style="--ar:16/10"></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- עוד יכולות -->
+  <section style="padding-top:20px">
+    <div class="wrap">
+      <div class="grid">
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-cut"/></svg><h3>רינגטונים</h3><p>חותכים קטע משיר שהורד, על גבי גל הקול, ושומרים אותו כרינגטון.</p></div>
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg><h3>מעקב אחרי ערוצים</h3><p>הודעה כשיוצא שיר חדש אצל זמר שאתם אוהבים. שום דבר לא יורד בלי לחיצה שלכם.</p></div>
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-history"/></svg><h3>היסטוריה עם חיפוש</h3><p>כל מה שהורדתם, עם חיפוש לפי שם שיר או אמן, והורדה חוזרת בלחיצה.</p></div>
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg><h3>מתעדכנת לבד</h3><p>התוכנה מודיעה על גרסה חדשה, וכלי ההורדה מתעדכנים מהאתר הרשמי שלהם.</p></div>
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-queue"/></svg><h3>הרבה קישורים בבת אחת</h3><p>מדביקים רשימת קישורים, וכולם נכנסים לתור. הורדה שנתקעה מתחדשת לבד.</p></div>
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg><h3>מצב בהיר וכהה</h3><p>ממשק נקי בעברית, מימין לשמאל, עם מצב כהה למי שמעדיף.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- השוואה -->
+  <section id="compare" style="background:var(--ink-2);border-block:1px solid var(--rule)">
+    <div class="wrap">
+      <div class="head-c reveal">
+        <span class="eyebrow">השוואה</span>
+        <h2>למה לא סתם אתר הורדות?</h2>
+        <p class="intro">אתרי הורדה ברשת עושים את העבודה הבסיסית, אבל כמעט תמיד במחיר של פרסומות, הפניות וחוסר שליטה על התוכן.</p>
+      </div>
+      <div class="reveal" style="overflow-x:auto">
+        <table class="compare">
+          <thead><tr><th scope="col"></th><th scope="col" class="us">מוריד השירים</th><th scope="col">אתר הורדות טיפוסי</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">מגן תוכן מובנה</th><td class="us"><span class="y">כן, תמיד פעיל</span></td><td><span class="n">אין</span></td></tr>
+            <tr><th scope="row">פרסומות וחלונות קופצים</th><td class="us"><span class="y">אין בכלל</span></td><td><span class="n">בדרך כלל יש</span></td></tr>
+            <tr><th scope="row">פלייליסט שלם עם בחירת שירים</th><td class="us"><span class="y">כן</span></td><td><span class="n">לרוב לא</span></td></tr>
+            <tr><th scope="row">חיפוש בערוצים מאושרים בלבד</th><td class="us"><span class="y">כן</span></td><td><span class="n">לא</span></td></tr>
+            <tr><th scope="row">ממשק מלא בעברית</th><td class="us"><span class="y">כן</span></td><td><span class="n">לרוב באנגלית</span></td></tr>
+            <tr><th scope="row">תור הורדות שנשמר</th><td class="us"><span class="y">כן</span></td><td><span class="n">לא</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- נטפרי -->
+  <section style="padding-bottom:40px">
+    <div class="wrap">
+      <div class="net reveal">
+        <svg class="ic" aria-hidden="true"><use href="#i-net"/></svg>
+        <div>
+          <h2>בנוי לרשתות מסוננות</h2>
+          <p>התוכנה עובדת בנטפרי וברימון. כשהסינון חוסם סרטון מסוים, מופיעה הודעה ברורה, וכפתור שמעתיק את הקישור כדי לבקש אישור.</p>
+        </div>
+        <a class="ghost" href="#faq">איך זה עובד?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- שלבים -->
   <section id="how">
     <div class="wrap">
-      <h2>איך מורידים שיר מיוטיוב למחשב</h2>
-      <p class="intro">שלושה צעדים, ובפעם הבאה רק השניים האחרונים.</p>
+      <div class="head-c reveal">
+        <span class="eyebrow">איך מתחילים</span>
+        <h2>איך מורידים שיר מיוטיוב למחשב</h2>
+      </div>
       <ol class="steps">
-        <li><h3>מתקינים את התוכנה</h3><p>מורידים את קובץ ההתקנה ומפעילים אותו. כל מה שצריך כלול בפנים.</p></li>
-        <li><h3>מדביקים קישור או מחפשים</h3><p>מעתיקים קישור מיוטיוב, או מקלידים שם של זמר בחיפוש המאושר.</p></li>
-        <li><h3>לוחצים הורד</h3><p>בוחרים MP3 או MP4, והשיר נשמר בתיקיית ההורדות שלכם.</p></li>
+        <li class="reveal"><h3>מתקינים</h3><p>מורידים את קובץ ההתקנה ומפעילים אותו. כל מה שצריך כבר בפנים.</p></li>
+        <li class="reveal"><h3>מדביקים או מחפשים</h3><p>מעתיקים קישור מיוטיוב, או מקלידים שם של זמר בחיפוש המאושר.</p></li>
+        <li class="reveal"><h3>לוחצים הורד</h3><p>בוחרים MP3 או MP4, והשיר נשמר בתיקיית ההורדות.</p></li>
       </ol>
     </div>
   </section>
 
+  <!-- מה חדש -->
+  <section style="background:var(--ink-2);border-block:1px solid var(--rule)">
+    <div class="wrap news">
+      <div class="reveal">
+        <span class="eyebrow">מה חדש</span>
+        <div class="ver">10.9</div>
+        <p class="intro" style="margin-top:14px">הגרסה האחרונה של מוריד השירים.<br><a href="https://github.com/hanyna/morid/releases">כל הגרסאות</a></p>
+      </div>
+      <ul class="reveal">
+        <li>פלייליסטים בעיצוב חדש: בוחרים בדיוק אילו שירים להוריד</li>
+        <li>הורדת פלייליסטים אמינה יותר, גם של YouTube Music ואלבומים</li>
+        <li>מאיץ הורדות מובנה, בלי להתקין שום תוסף</li>
+        <li>חיתוך שקט בתחילת השיר</li>
+        <li>מאות ערוצים חדשים בחיפוש, כולל ערוצי הדף היומי</li>
+        <li>הודעה ברורה כשנטפרי או רימון חוסמים סרטון</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- שאלות -->
   <section id="faq">
     <div class="wrap">
-      <h2>שאלות נפוצות</h2>
+      <div class="head-c reveal"><span class="eyebrow">שאלות נפוצות</span><h2>שאלות ותשובות</h2></div>
       <div class="faq">
-        <details><summary>האם התוכנה חינמית?</summary><p>כן. התוכנה חינמית לגמרי, בלי פרסומות ובלי מנוי.</p></details>
+        <details><summary>איך מורידים שיר מיוטיוב למחשב?</summary><p>מתקינים את מוריד השירים, מעתיקים את הקישור של השיר מיוטיוב ומדביקים אותו בתוכנה, בוחרים MP3 או MP4 ולוחצים הורד. השיר נשמר בתיקיית ההורדות.</p></details>
+        <details><summary>האם התוכנה חינמית?</summary><p>כן. התוכנה חינמית לגמרי, בלי מנוי ובלי תשלום.</p></details>
         <details><summary>האם התוכנה עובדת בנטפרי ורימון?</summary><p>כן, התוכנה מותאמת לעבודה ברשתות מסוננות. כשהסינון חוסם סרטון מסוים, התוכנה מודיעה על כך ומאפשרת להעתיק את הקישור כדי לבקש אישור.</p></details>
         <details><summary>מה עושה מגן התוכן?</summary><p>לפני כל הורדה התוכנה בודקת את שם הסרטון, הערוץ ופרטי האמן, וחוסמת תוכן שאינו ראוי. המגן פועל תמיד ואי אפשר לכבות אותו.</p></details>
         <details><summary>אפשר להוריד פלייליסט שלם?</summary><p>כן. מדביקים קישור לפלייליסט, בוחרים אילו שירים להוריד, והם נשמרים בתיקייה בשם הפלייליסט, ממוספרים לפי הסדר.</p></details>
         <details><summary>באילו פורמטים אפשר להוריד?</summary><p>שמע ב-MP3 באיכות לבחירה עד 320 קילו-ביט, וסרטונים ב-MP4 שמתנגנים בכל מחשב, ועוד פורמטים נוספים.</p></details>
         <details><summary>צריך להתקין עוד תוכנות?</summary><p>לא. כל מה שהתוכנה צריכה כלול בקובץ ההתקנה, והכלים מתעדכנים לבד.</p></details>
-        <details><summary>חלונות מציג אזהרה בהתקנה. מה עושים?</summary><p>זו אזהרה רגילה לתוכנות חדשות של מפתחים עצמאיים. לוחצים על „מידע נוסף” ואז על „הפעל בכל זאת”.</p></details>
+        <details><summary>חלונות מציג אזהרה בהתקנה. מה עושים?</summary><p>זו אזהרה רגילה לתוכנות של מפתחים עצמאיים. לוחצים על „מידע נוסף” ואז על „הפעל בכל זאת”.</p></details>
         <details><summary>כבר יש לי את התוכנה. איך מעדכנים?</summary><p>התוכנה מודיעה בעצמה כשיש גרסה חדשה ומעדכנת בלחיצה. אפשר גם להוריד את קובץ העדכון מ<a href="https://github.com/hanyna/morid/releases/latest">דף הגרסאות</a>.</p></details>
       </div>
     </div>
   </section>
 
+  <!-- הורדה -->
   <section id="download" class="get">
     <div class="wrap">
-      <div>
-        <h2>מורידים ומתחילים</h2>
-        <p class="intro">קובץ התקנה אחד, חבילה מלאה. ההתקנה לוקחת כדקה.</p>
-        <a class="btn dl-link" href="https://github.com/hanyna/morid/releases/download/v10.9/morid_setup_10.9.exe">
-          <svg aria-hidden="true"><use href="#i-down"/></svg>הורדת מוריד השירים
-        </a>
-        <a class="alt" href="https://github.com/hanyna/morid/releases/latest">כל הגרסאות וקבצי העדכון</a>
-      </div>
-      <ul class="req" aria-label="פרטי התוכנה">
-        <li><span>גרסה</span><b class="ver">10.9.1</b></li>
-        <li><span>מערכת</span><b>Windows 10 / 11</b></li>
-        <li><span>גודל</span><b class="size">כ-90 מ"ב</b></li>
-        <li><span>שפה</span><b>עברית</b></li>
-        <li><span>מחיר</span><b>חינם</b></li>
+      <img class="logo reveal" src="logo.png" alt="" width="110" height="110">
+      <h2 class="reveal">מוכנים להתחיל?</h2>
+      <p class="intro reveal">קובץ התקנה אחד, חבילה מלאה. ההתקנה לוקחת כדקה.</p>
+      <a class="btn dl-link reveal" href="https://github.com/hanyna/morid/releases/download/v10.9/morid_setup_10.9.exe">
+        <svg class="ic" aria-hidden="true"><use href="#i-down"/></svg>
+        <span>הורדת מוריד השירים<small>חינם · Windows 10 ו-11</small></span>
+      </a>
+      <ul class="spec">
+        <li>גרסה <b class="ver-n">10.9.1</b></li>
+        <li>גודל <b class="size">כ-90 מ"ב</b></li>
+        <li>שפה <b>עברית</b></li>
+        <li><a href="https://github.com/hanyna/morid/releases/latest">כל הגרסאות וקבצי העדכון</a></li>
       </ul>
+      <p class="warn"><b>אם Windows מציג אזהרה כחולה:</b> זה רגיל לתוכנות של מפתחים עצמאיים. לוחצים על „מידע נוסף” ואז על „הפעל בכל זאת”.</p>
     </div>
   </section>
 </main>
@@ -389,12 +629,18 @@ footer a{color:var(--muted)}
   </div>
 </footer>
 
+<dialog class="lb" id="lb" aria-label="צילום מסך מוגדל">
+  <img id="lbImg" src="" alt="">
+  <button type="button" id="lbClose" aria-label="סגירה">×</button>
+</dialog>
+
 <script>
-// פרטי הגרסה העדכנית: נלקחים אוטומטית, כך שאין צורך לערוך את הדף בכל גרסה חדשה
 (function(){
   function setText(sel, val){ document.querySelectorAll(sel).forEach(function(el){ el.textContent = val; }); }
+
+  // הגרסה והקובץ העדכניים נלקחים אוטומטית, כך שאין צורך לערוך את הדף בכל גרסה חדשה
   fetch('version.json', {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : null; })
-    .then(function(v){ if (v && v.version) setText('.ver', v.version); }).catch(function(){});
+    .then(function(v){ if (v && v.version) setText('.ver-n', v.version); }).catch(function(){});
   fetch('https://api.github.com/repos/hanyna/morid/releases/latest')
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(rel){
@@ -405,19 +651,28 @@ footer a{color:var(--muted)}
       setText('.size', 'כ-' + Math.round(a.size / 1048576) + ' מ"ב');
     }).catch(function(){});
 
-  // ספירת האחוזים בחלון המדומה, בתיאום עם פס ההתקדמות
-  var pct = document.getElementById('pct');
-  if (pct && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    var t0 = null, dur = 4200, delay = 400;
-    pct.textContent = '0';
-    requestAnimationFrame(function step(t){
-      if (t0 === null) t0 = t;
-      var x = Math.min(Math.max((t - t0 - delay) / dur, 0), 1);
-      var e = 1 - Math.pow(1 - x, 2.2);
-      pct.textContent = Math.round(e * 100);
-      if (x < 1) requestAnimationFrame(step);
+  // קו מתחת לכותרת בגלילה
+  var top = document.getElementById('top');
+  addEventListener('scroll', function(){ top.classList.toggle('scrolled', scrollY > 8); }, {passive:true});
+
+  // כניסה עדינה של קטעים
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){ io.observe(el); });
+  } else { items.forEach(function(el){ el.classList.add('in'); }); }
+
+  // הגדלת צילומי מסך
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg');
+  document.querySelectorAll('.zoom').forEach(function(b){
+    b.addEventListener('click', function(){
+      var img = b.querySelector('img.shot');
+      lbImg.src = b.dataset.full; lbImg.alt = img ? img.alt : '';
+      if (lb.showModal) lb.showModal(); else window.open(b.dataset.full);
     });
-  }
+  });
+  document.getElementById('lbClose').addEventListener('click', function(){ lb.close(); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) lb.close(); });
 })();
 </script>
 </body>
