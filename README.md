@@ -1,5 +1,13 @@
 # מוריד השירים
 
+<p align="center">
+  <img src="shots/main.webp" alt="מוריד השירים — החלון הראשי" width="760">
+</p>
+
+תוכנה בעברית לווינדוס להורדת שירים ופלייליסטים כ-MP3 — עם חיפוש סגור, מגן תוכן מובנה, מאיץ הורדות ותמיכה מלאה ברשת נטפרי.
+
+**[לדף התוכנה ←](https://hanyna.github.io/morid/)**
+
 **גרסה נוכחית: 10.9**
 
 ## הורדה
@@ -10,6 +18,14 @@
 | [morid_update_10.9.exe](https://hanyna.github.io/morid/morid_update_10.9_web.exe) | **עדכון** של תוכנה שכבר מותקנת — קובץ קטן ומהיר (ובמחשב חדש הוא גם מתקין אותה) |
 
 כל הגרסאות: [דף ההורדות](https://github.com/hanyna/morid/releases)
+
+## צילומי מסך
+
+| חיפוש | פלייליסט |
+|:---:|:---:|
+| <img src="shots/search.webp" alt="חיפוש" width="380"> | <img src="shots/playlist.webp" alt="פלייליסט" width="380"> |
+| **תור הורדות** | **צלצולים** |
+| <img src="shots/queue.webp" alt="תור הורדות" width="380"> | <img src="shots/ring.webp" alt="צלצולים" width="380"> |
 
 ## מה חדש בגרסה 10.9
 - **פלייליסטים בעיצוב חדש**: חלון עם כל השירים לפי הסדר — בוחרים בדיוק מה להוריד, רואים מה המגן חוסם ומה כבר הורדת, ושומרים בתיקייה בשם הפלייליסט, ממוספר לפי הסדר
@@ -44,6 +60,9 @@
 2. גוררים את `morid_update_<גרסה>.exe` ואת `morid_setup_<גרסה>.exe` (החבילה המלאה) — בשמות האלה בדיוק, באנגלית
 3. Publish release — התוכנות מגרסה 10.6 ומעלה מוצאות את הגרסה לבד
 4. בשביל גרסאות 10.5 ומטה ונטפרי: עותק של קובץ העדכון בשם `morid_update_<גרסה>_web.exe` בשורש המאגר, ועדכון `version.json`
+
+## In English
+**Morid** is a Hebrew-language Windows app for downloading songs and playlists as MP3. It includes a curated search, a built-in content filter, a multi-connection download accelerator, and full support for filtered networks (NetFree). Download the installer from the [Releases page](https://github.com/hanyna/morid/releases) or visit the [project website](https://hanyna.github.io/morid/).
 
 ## רישיון
 כל הזכויות שמורות © LANDESBERG · ליצירת קשר: hanynalandesberg@gmail.com
