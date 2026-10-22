@@ -1,3 +1,5 @@
+<div dir="rtl">
+
 # מוריד השירים
 
 <p align="center">
@@ -36,9 +38,9 @@
 - **הורדות אמינות יותר** מול השינויים האחרונים ביוטיוב: מנוע עדכני עם חזרה אוטומטית לגרסה הקודמת אם עדכון לא עובד, ופחות המתנות חוזרות על שיר שנכשל
 
 ### נטפרי, רימון ואתרוג
-- התוכנה פונה ליוטיוב קודם כמו דפדפן.
-- כשהסינון מחליף קובץ בסרטון חסימה ("אנחנו מגנים עליך!") הוא לא נשמר בשם השיר, התוכנה מנסה דרך אחרת, ובסוף מוצגת הודעה ברורה.
-- הפרדה ברורה בין המגן של התוכנה, הסינון ברשת והאנטי-וירוס — כל שורה שנכשלה מסומנת מי חסם.
+- התוכנה פונה ליוטיוב קודם כמו דפדפן
+- כשהסינון מחליף קובץ בסרטון חסימה ("אנחנו מגנים עליך!") הוא לא נשמר בשם השיר, התוכנה מנסה דרך אחרת, ובסוף מוצגת הודעה ברורה
+- הפרדה ברורה בין המגן של התוכנה, הסינון ברשת והאנטי-וירוס — כל שורה שנכשלה מסומנת מי חסם
 
 ### המגן
 - **המגן לא חוסם סרטונים כשרים** בגלל מילה שמסתתרת בתוך מילה אחרת ("לבנות", "שירי ילדות", "פריטה") — כל מילה נבדקת כמילה שלמה
@@ -51,17 +53,17 @@
 
 הגרסאות הקודמות: [היסטוריית גרסאות](CHANGELOG.md)
 
-## In English
-
-**Morid** is a Hebrew-language Windows app for downloading songs and playlists as MP3. It includes a curated search, a built-in content filter, a multi-connection download accelerator, and full support for filtered networks (NetFree). Download the installer from the [Releases page](https://github.com/hanyna/morid/releases) or visit the [project website](https://hanyna.github.io/morid/).
-
-## איך מפרסמים גרסה חדשה (למפתח)
-1. Releases ← Draft a new release ← תג `v<גרסה>` (למשל `v10.12`)
-2. גוררים את `morid_update_<גרסה>.exe` ואת `morid_setup_<גרסה>.exe` (החבילה המלאה) — בשמות האלה בדיוק, באנגלית
-3. Publish release — התוכנות מגרסה 10.6 ומעלה מוצאות את הגרסה לבד
-4. בשביל גרסאות 10.5 ומטה ונטפרי: עותק של קובץ העדכון בשם `morid_update_<גרסה>_web.exe` בשורש המאגר, ועדכון `version.json`
-
 ## רישיון
 כל הזכויות שמורות © LANDESBERG · ליצירת קשר: hanynalandesberg@gmail.com
 
 התוכנה משתמשת ברכיבי קוד פתוח: [yt-dlp](https://github.com/yt-dlp/yt-dlp) (רישיון Unlicense) ו-[FFmpeg](https://ffmpeg.org) (רישיון GPL, גרסה 2 ואילך; ה-build המדויק שבשימוש: [BtbN/FFmpeg-Builds](https://github.com/BtbN/FFmpeg-Builds/releases)). נוסח הרישיונות המלא זמין גם בתוך התוכנה, בתפריט תחזוקה ← אודות.
+
+</div>
+
+<div dir="ltr">
+
+## In English
+
+**Morid** is a Hebrew-language Windows app for downloading songs and playlists as MP3. It includes a curated search, a built-in content filter, a multi-connection download accelerator, and full support for filtered networks (NetFree). Download the installer from the [Releases page](https://github.com/hanyna/morid/releases) or visit the [project website](https://hanyna.github.io/morid/).
+
+</div>
