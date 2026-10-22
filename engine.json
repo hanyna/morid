@@ -1,0 +1,6 @@
+{
+  "rev": 1,
+  "profiles": ["", "youtube:player_client=android,web", "youtube:player_client=web_safari,mweb", "youtube:player_client=tv,web_embedded"],
+  "reset": false,
+  "minEngine": ""
+}
