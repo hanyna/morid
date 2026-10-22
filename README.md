@@ -10,14 +10,14 @@
 
 **[לדף התוכנה ←](https://hanyna.github.io/morid/)**
 
-**גרסה נוכחית: 10.12**
+**גרסה נוכחית: 10.13**
 
 ## הורדה
 
 | קובץ | למי |
 |------|-----|
-| [morid_setup_10.12.exe](https://github.com/hanyna/morid/releases/latest) | **התקנה ראשונה** — החבילה המלאה. כוללת את ffmpeg (ממיר ה-MP3), ומתקינה את רכיב WebView2 אם הוא חסר |
-| [morid_update_10.12.exe](https://hanyna.github.io/morid/morid_update_10.12_web.exe) | **עדכון** של תוכנה שכבר מותקנת — קובץ קטן ומהיר (ובמחשב חדש הוא גם מתקין אותה) |
+| [morid_setup_10.13.exe](https://github.com/hanyna/morid/releases/latest) | **התקנה ראשונה** — החבילה המלאה. כוללת את ffmpeg (ממיר ה-MP3), ומתקינה את רכיב WebView2 אם הוא חסר |
+| [morid_update_10.13.exe](https://hanyna.github.io/morid/morid_update_10.13_web.exe) | **עדכון** של תוכנה שכבר מותקנת — קובץ קטן ומהיר (ובמחשב חדש הוא גם מתקין אותה) |
 
 כל הגרסאות: [דף ההורדות](https://github.com/hanyna/morid/releases)
 
@@ -28,6 +28,9 @@
 | <img src="shots/search.webp" alt="חיפוש" width="380"> | <img src="shots/playlist.webp" alt="פלייליסט" width="380"> |
 | **תור הורדות** | **צלצולים** |
 | <img src="shots/queue.webp" alt="תור הורדות" width="380"> | <img src="shots/ring.webp" alt="צלצולים" width="380"> |
+
+## מה חדש בגרסה 10.13
+- תוקן באג שבגללו "הורד" בטאב "שירים חדשים" (מנויים) לא עבד
 
 ## מה חדש בגרסה 10.12
 

@@ -1,11 +1,12 @@
 {
-  "version": "10.12",
-  "filename": "morid_update_10.12.exe",
-  "installer": "https://hanyna.github.io/morid/morid_update_10.12_web.exe",
-  "update": "https://hanyna.github.io/morid/morid_update_10.12_web.exe",
+  "version": "10.13",
+  "filename": "morid_update_10.13.exe",
+  "installer": "https://hanyna.github.io/morid/morid_update_10.13_web.exe",
+  "update": "https://hanyna.github.io/morid/morid_update_10.13_web.exe",
   "page": "https://github.com/hanyna/morid/releases",
   "notes": "הורדות מהירות ואמינות יותר מול השינויים האחרונים ביוטיוב, המגן לא חוסם סרטונים כשרים, ופלייליסטים לא נקטעים אחרי השיר הראשון",
   "changes": [
+    "🐛 תוקן באג שבגללו לחיצה על \"הורד\" בטאב \"שירים חדשים\" (מנויים) לא עשתה כלום והציגה שגיאה — עכשיו ההורדה מתחילה כרגיל",
     "🔧 תוקנה התקלה שבגללה חלק מהשירים לא ירדו (\"The page needs to be reloaded\" או קובץ בלי שמע) — התוכנה פונה עכשיו ליוטיוב בדרך שמנוע ההורדה ממליץ עליה",
     "⚡ מנוע ההורדה מתעדכן לגרסה העדכנית ביותר, עם תיקונים ליוטיוב מוקדם יותר. אם עדכון לא עובד טוב — התוכנה חוזרת לבד לגרסה הקודמת",
     "🧩 חדש: \"פותר החידות של יוטיוב\" מובנה בתוכנה ועובד מיד — בלעדיו יוטיוב האט את ההורדות בכוונה והסתיר איכויות. פותר מהיר יותר (deno) מותקן לבד ברקע כשאפשר",
