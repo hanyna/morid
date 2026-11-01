@@ -9,5 +9,9 @@
     "youtube:player_client=web_safari,mweb"
   ],
   "reset": true,
-  "minEngine": ""
+  "minEngine": "",
+  "chromeExt": [
+    "liddgbajcfnnffojoebeaakfhgeapmmb"
+  ],
+  "chromeStore": "liddgbajcfnnffojoebeaakfhgeapmmb"
 }

@@ -1,0 +1,14 @@
+{
+ "ffmpeg": {
+  "rev": 1,
+  "url": "https://github.com/hanyna/morid/releases/download/ffmpeg-min/ffmpeg_min_win64.zip"
+ },
+ "aria2c": {
+  "rev": 1,
+  "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip"
+ },
+ "spotdl": {
+  "rev": 1,
+  "url": "https://github.com/spotDL/spotify-downloader/releases/download/v4.5.2/spotdl-4.5.2-win32.exe"
+ }
+}
