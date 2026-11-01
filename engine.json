@@ -1,6 +1,13 @@
 {
-  "rev": 1,
-  "profiles": ["", "youtube:player_client=android,web", "youtube:player_client=web_safari,mweb", "youtube:player_client=tv,web_embedded"],
-  "reset": false,
+  "rev": 2,
+  "profiles": [
+    "youtube:skip=hls",
+    "youtube:player_client=android,web;skip=hls",
+    "youtube:player_client=web_safari,mweb;skip=hls",
+    "youtube:player_client=tv,web_embedded;skip=hls",
+    "",
+    "youtube:player_client=web_safari,mweb"
+  ],
+  "reset": true,
   "minEngine": ""
 }
