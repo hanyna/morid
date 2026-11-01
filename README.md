@@ -29,6 +29,14 @@
 | **תור הורדות** | **צלצולים** |
 | <img src="shots/queue.webp" alt="תור הורדות" width="380"> | <img src="shots/ring.webp" alt="צלצולים" width="380"> |
 
+### 🧩 התוסף לכרום בפעולה
+
+| בוחרים שירים ופורמט | רואים את ההתקדמות ופותחים |
+|:---:|:---:|
+| <img src="shots/tosaf-1.jpg" alt="התוסף לכרום — בחירת שירים מפלייליסט ופורמט" width="380"> | <img src="shots/tosaf-2.jpg" alt="חלון ההתקדמות של ההורדות מהתוסף" width="380"> |
+
+[להתקנת התוסף מהחנות של כרום ←](https://chromewebstore.google.com/detail/liddgbajcfnnffojoebeaakfhgeapmmb)
+
 ## מה חדש בגרסה 10.15
 
 ### 🧩 תוסף לכרום
