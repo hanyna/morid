@@ -55,6 +55,8 @@
   "mainEntity": [
     { "@type": "Question", "name": "איך מורידים שיר מיוטיוב למחשב?",
       "acceptedAnswer": { "@type": "Answer", "text": "מתקינים את מוריד השירים, מעתיקים את הקישור של השיר מיוטיוב ומדביקים אותו בתוכנה, בוחרים MP3 או MP4 ולוחצים הורד. השיר נשמר בתיקיית ההורדות." } },
+    { "@type": "Question", "name": "איך מתקינים את התוסף לכרום?",
+      "acceptedAnswer": { "@type": "Answer", "text": "קודם מתקינים את התוכנה מוריד השירים. אחר כך נכנסים לדף התוסף בחנות של כרום ולוחצים 'הוספה ל-Chrome'. התוכנה מתחברת לתוסף לבד." } },
     { "@type": "Question", "name": "האם התוכנה חינמית?",
       "acceptedAnswer": { "@type": "Answer", "text": "כן. התוכנה חינמית לגמרי, בלי מנוי ובלי תשלום." } },
     { "@type": "Question", "name": "האם התוכנה עובדת בנטפרי ורימון?",
@@ -221,6 +223,18 @@ h2{font:900 clamp(34px,4.2vw,52px)/1.1 var(--serif);margin:0 0 18px;letter-spaci
 
 /* ---------- מצגת יכולות ---------- */
 .feature{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:center;padding:56px 0}
+/* ---------- התוסף לכרום ---------- */
+.ext-sec{background:radial-gradient(1000px 480px at 50% 0,rgba(95,221,236,.06),transparent 70%);border-top:1px solid var(--rule)}
+.ext-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.ext-shot{width:100%;height:auto;border-radius:16px;box-shadow:0 0 0 1px rgba(255,255,255,.08),0 40px 80px -36px rgba(0,0,0,.95)}
+.ext-points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.ext-points div{padding:22px 24px;border:1px solid var(--rule);border-radius:16px;background:var(--panel)}
+.ext-points b{display:block;font:700 18px/1.4 var(--sans);margin-bottom:6px}
+.ext-points span{display:block;color:var(--muted);font-size:15.5px}
+.ext-cta{text-align:center;margin-top:40px}
+.ext-note{color:var(--muted);font-size:15px;margin:16px 0 0}
+@media (max-width:980px){.ext-grid,.ext-points{grid-template-columns:1fr}}
+
 .feature + .feature{border-top:1px solid var(--rule)}
 .feature.flip > :first-child{order:2}
 .feature h3{font:900 clamp(28px,3vw,38px)/1.15 var(--serif);margin:0 0 14px}
@@ -367,6 +381,8 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
     <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 01-14 5.3M4 12a8 8 0 0114-5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></symbol>
     <symbol id="i-queue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="5" rx="1.5"/><rect x="3.5" y="11" width="17" height="5" rx="1.5"/><path d="M7 20h10"/></symbol>
     <symbol id="i-history" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 102.5-6L3.5 8.5"/><path d="M3.5 4v4.5H8M12 8v4.5l3 2"/></symbol>
+    <symbol id="i-puzzle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 4.5a2 2 0 014 0V6h4a1 1 0 011 1v4h-1.5a2 2 0 000 4H18v4a1 1 0 01-1 1h-4v-1.5a2 2 0 00-4 0V20H5a1 1 0 01-1-1v-4h1.5a2 2 0 000-4H4V7a1 1 0 011-1h4z"/></symbol>
+    <symbol id="i-feather" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 4c-7 0-12 4.5-12 11.5V20"/><path d="M8 15.5h6.5C18 15.5 20 10 20 4"/><path d="M4 20l4-4.5"/></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 018 0v3"/></symbol>
@@ -379,6 +395,7 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
     <nav aria-label="ניווט ראשי">
       <a href="#shield">המגן</a>
       <a href="#features">יכולות</a>
+      <a href="#extension">תוסף לכרום</a>
       <a href="#compare">השוואה</a>
       <a href="madrich/">מדריכים</a>
       <a href="#faq">שאלות נפוצות</a>
@@ -396,7 +413,7 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
         <img class="hero-logo" src="logo.png" alt="מוריד השירים – תוכנה להורדת שירים מיוטיוב למחשב" width="84" height="84">
         <h1>מוריד השירים</h1>
         <p class="tag">תוכנה כשרה להורדת שירים מיוטיוב למחשב</p>
-        <p class="lede">נגינה, חזנות ושיעורי תורה – ישר לתיקייה במחשב, בלחיצה אחת. כל הורדה עוברת קודם דרך מגן תוכן שאין לו מתג כיבוי, והחיפוש מציג רק ערוצים מאושרים.</p>
+        <p class="lede">נגינה, חזנות ושיעורי תורה – ישר לתיקייה במחשב, בלחיצה אחת. כל הורדה עוברת קודם דרך מגן תוכן שאין לו מתג כיבוי, והחיפוש מציג רק ערוצים מאושרים. ועם התוסף לכרום מורידים ישר מהדף ביוטיוב.</p>
         <div class="cta">
           <a class="btn dl-link" href="https://github.com/hanyna/morid/releases/download/v10.15/morid_setup_10.15.exe">
             <svg class="ic" aria-hidden="true"><use href="#i-down"/></svg>
@@ -409,6 +426,7 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
           <li>בעברית מלאה</li>
           <li>עובד בנטפרי וברימון</li>
           <li>מתעדכן לבד</li>
+          <li>תוסף לכרום</li>
         </ul>
       </div>
 
@@ -522,6 +540,37 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
     </div>
   </section>
 
+  <!-- התוסף לכרום -->
+  <section id="extension" class="ext-sec">
+    <div class="wrap">
+      <div class="head-c reveal">
+        <span class="eyebrow">חדש · תוסף לכרום</span>
+        <h2>מורידים ישר מהדף ביוטיוב</h2>
+        <p class="intro">בלי להעתיק קישורים ובלי לעבור בין חלונות. פותחים שיר או פלייליסט, לוחצים על התוסף, בוחרים פורמט, וזהו.</p>
+      </div>
+      <div class="ext-grid reveal">
+        <button class="zoom" data-full="shots/tosaf-1.webp" aria-label="הגדלת התמונה של חלון התוסף">
+          <img class="ext-shot" src="shots/tosaf-1.webp" alt="התוסף לכרום של מוריד השירים: בחירת שירים מפלייליסט ביוטיוב, בחירת פורמט וכפתור הורדה" width="1280" height="800" loading="lazy">
+        </button>
+        <button class="zoom" data-full="shots/tosaf-2.webp" aria-label="הגדלת התמונה של חלון ההתקדמות">
+          <img class="ext-shot" src="shots/tosaf-2.webp" alt="חלון ההתקדמות של הורדות מהתוסף, עם כפתורי פתח עכשיו והצג בתיקייה" width="1280" height="800" loading="lazy">
+        </button>
+      </div>
+      <div class="ext-points reveal">
+        <div><b>שיר או פלייליסט שלם</b><span>בפלייליסט מסמנים בדיוק אילו שירים להוריד, והם נשמרים בתיקייה מסודרת.</span></div>
+        <div><b>גם מחוץ ליוטיוב</b><span>בפורום, בבלוג או בכל אתר עם סרטוני יוטיוב משובצים, התוסף מציג את הסרטונים שבדף.</span></div>
+        <div><b>אותו מגן, אותו סינון</b><span>ההורדה עוברת דרך התוכנה שבמחשב, עם מגן התוכן שלה ועם הסינון של הרשת.</span></div>
+      </div>
+      <div class="ext-cta reveal">
+        <a class="btn" href="https://chromewebstore.google.com/detail/liddgbajcfnnffojoebeaakfhgeapmmb" rel="noopener">
+          <svg class="ic" aria-hidden="true"><use href="#i-puzzle"/></svg>
+          <span>הוספת התוסף לכרום<small>חינם · מהחנות הרשמית של כרום</small></span>
+        </a>
+        <p class="ext-note">התוסף עובד יחד עם התוכנה מוריד השירים (גרסה 10.15 ומעלה), אז קודם <a href="#download">מתקינים את התוכנה</a>.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- עוד יכולות -->
   <section style="padding-top:20px">
     <div class="wrap">
@@ -531,7 +580,7 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
         <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-history"/></svg><h3>היסטוריה עם חיפוש</h3><p>כל מה שהורדתם, עם חיפוש לפי שם שיר או אמן, והורדה חוזרת בלחיצה.</p></div>
         <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg><h3>מתעדכנת לבד</h3><p>התוכנה מודיעה על גרסה חדשה, וכלי ההורדה מתעדכנים מהאתר הרשמי שלהם.</p></div>
         <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-queue"/></svg><h3>הרבה קישורים בבת אחת</h3><p>מדביקים רשימת קישורים, וכולם נכנסים לתור. הורדה שנתקעה מתחדשת לבד.</p></div>
-        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg><h3>מצב בהיר וכהה</h3><p>ממשק נקי בעברית, מימין לשמאל, עם מצב כהה למי שמעדיף.</p></div>
+        <div class="card reveal"><svg class="ic" aria-hidden="true"><use href="#i-feather"/></svg><h3>קלה ומהירה</h3><p>ממיר שמע שנבנה במיוחד לתוכנה, החלון נפתח מהר, וההורדה מתחילה מיד.</p></div>
       </div>
     </div>
   </section>
@@ -542,14 +591,14 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
       <div class="head-c reveal">
         <span class="eyebrow">השוואה</span>
         <h2>למה לא סתם אתר הורדות?</h2>
-        <p class="intro">אתרי הורדה ברשת עושים את העבודה הבסיסית, אבל כמעט תמיד במחיר של פרסומות, הפניות וחוסר שליטה על התוכן.</p>
+        <p class="intro">אתרי הורדה ברשת עושים את העבודה הבסיסית, אבל בלי סינון, בלי עברית ובלי שליטה על מה שבאמת יורד למחשב.</p>
       </div>
       <div class="reveal" style="overflow-x:auto">
         <table class="compare">
           <thead><tr><th scope="col"></th><th scope="col" class="us">מוריד השירים</th><th scope="col">אתר הורדות טיפוסי</th></tr></thead>
           <tbody>
             <tr><th scope="row">מגן תוכן מובנה</th><td class="us"><span class="y">כן, תמיד פעיל</span></td><td><span class="n">אין</span></td></tr>
-            <tr><th scope="row">פרסומות וחלונות קופצים</th><td class="us"><span class="y">אין בכלל</span></td><td><span class="n">בדרך כלל יש</span></td></tr>
+            <tr><th scope="row">הורדה ישר מהדף ביוטיוב (תוסף לכרום)</th><td class="us"><span class="y">כן</span></td><td><span class="n">לא</span></td></tr>
             <tr><th scope="row">פלייליסט שלם עם בחירת שירים</th><td class="us"><span class="y">כן</span></td><td><span class="n">לרוב לא</span></td></tr>
             <tr><th scope="row">חיפוש בערוצים מאושרים בלבד</th><td class="us"><span class="y">כן</span></td><td><span class="n">לא</span></td></tr>
             <tr><th scope="row">ממשק מלא בעברית</th><td class="us"><span class="y">כן</span></td><td><span class="n">לרוב באנגלית</span></td></tr>
@@ -632,6 +681,7 @@ dialog.lb button{position:absolute;top:10px;inset-inline-end:10px;width:40px;hei
       <div class="head-c reveal"><span class="eyebrow">שאלות נפוצות</span><h2>שאלות ותשובות</h2></div>
       <div class="faq">
         <details><summary>איך מורידים שיר מיוטיוב למחשב?</summary><p>מתקינים את מוריד השירים, מעתיקים את הקישור של השיר מיוטיוב ומדביקים אותו בתוכנה, בוחרים MP3 או MP4 ולוחצים הורד. השיר נשמר בתיקיית ההורדות.</p></details>
+        <details><summary>איך מתקינים את התוסף לכרום?</summary><p>קודם מתקינים את התוכנה מוריד השירים. אחר כך נכנסים ל<a href="https://chromewebstore.google.com/detail/liddgbajcfnnffojoebeaakfhgeapmmb" rel="noopener">דף התוסף בחנות של כרום</a> ולוחצים „הוספה ל-Chrome”. התוכנה מתחברת לתוסף לבד.</p></details>
         <details><summary>האם התוכנה חינמית?</summary><p>כן. התוכנה חינמית לגמרי, בלי מנוי ובלי תשלום.</p></details>
         <details><summary>האם התוכנה עובדת בנטפרי ורימון?</summary><p>כן, התוכנה מותאמת לעבודה ברשתות מסוננות. כשהסינון חוסם סרטון מסוים, התוכנה מודיעה על כך ומאפשרת להעתיק את הקישור כדי לבקש אישור.</p></details>
         <details><summary>מה עושה מגן התוכן?</summary><p>לפני כל הורדה התוכנה בודקת את שם הסרטון, הערוץ ופרטי האמן, וחוסמת תוכן שאינו ראוי. המגן פועל תמיד ואי אפשר לכבות אותו.</p></details>
