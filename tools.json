@@ -1,7 +1,8 @@
 {
  "ffmpeg": {
-  "rev": 1,
-  "url": "https://github.com/hanyna/morid/releases/download/ffmpeg-min/ffmpeg_min_win64.zip"
+  "rev": 2,
+  "url": "https://github.com/hanyna/morid/releases/download/ffmpeg-min/ffmpeg_min_win64.zip",
+  "sha256": "325424bf7e36db21de671be4592facf5e68bbd25fec4950e89cba2944bb1119b"
  },
  "aria2c": {
   "rev": 1,
